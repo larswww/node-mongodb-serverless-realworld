@@ -1,0 +1,35 @@
+{
+  "name": "node-mongodb-serverless-realworld",
+  "version": "1.0.0",
+  "description": "> ### [Serverless-Framework MongoDB Node] codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld) spec and API.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larswww/node-mongodb-serverless-realworld.git"
+  },
+  "keywords": [],
+  "author": "Lars Woldern <lars.woldern@gmail.com> (https://larsw.net/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/larswww/node-mongodb-serverless-realworld/issues"
+  },
+  "homepage": "https://github.com/larswww/node-mongodb-serverless-realworld#readme",
+  "dependencies": {
+    "jsonwebtoken": "8.5.1",
+    "mongoose": "5.7.7",
+    "mongoose-unique-validator": "2.0.3",
+    "slug": "1.1.0"
+  },
+  "devDependencies": {
+    "newman": "4.5.5",
+    "serverless-domain-manager": "3.3.0",
+    "serverless-dotenv-plugin": "2.1.1",
+    "serverless-offline": "5.12.0"
+  }
+}

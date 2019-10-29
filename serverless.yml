@@ -1,0 +1,230 @@
+service: real-world-backend
+
+# serverless logs -f tags , show the mongo econn refused networkerror
+# show not having configured secret?
+provider:
+  name: aws
+  endpointType: REGIONAL
+  runtime: nodejs10.x
+  stage: dev # explain stage... figure out stage?
+  region: us-east-1
+  timeout: 30
+
+plugins:
+  - serverless-offline
+  - serverless-dotenv-plugin
+#  - serverless-domain-manager
+
+# https://serverless.com/blog/serverless-api-gateway-domain/
+#custom:
+#  customDomain: # https://serverless.com/blog/api-gateway-multiple-services/
+#    domainName: api.sledbank.com # Change this to your domain.
+#    basePath: api # This will be prefixed to all routes
+#    stage: ${self:provider.stage} # https://serverless.com/framework/docs/providers/aws/guide/deploying/
+#    createRoute53Record: true
+#    certificateName: 'api.sledbank.com'
+#    endpointType: 'regional'
+#   securityPolicy: tls_1_2
+
+#  serverless-offline: # https://www.npmjs.com/package/serverless-offline
+#    port: 4000
+
+functions:
+
+  # Authorization
+  # Great articles:
+  # https://yos.io/2017/09/03/serverless-authentication-with-jwt/
+  # https://www.alexdebrie.com/posts/lambda-custom-authorizers/
+  authorize:
+    handler: src/handlers/authorize.handler
+    cors: true
+
+# Tags
+  tags:
+    handler: src/handlers/tags.get
+    events:
+      - http:
+          path: /tags
+          method: get
+          integration: lambda
+          cors: true
+
+# Users
+  postUser:
+    handler: src/handlers/users.postUser
+    events:
+      - http:
+          path: /users
+          method: post
+          integration: lambda # show what running without this looks like and how the payload becomes a string
+          cors: true
+
+  postLogin:
+    handler: src/handlers/users.postLogin
+    events:
+      - http:
+          path: /users/login
+          method: post
+          integration: lambda
+          cors: true
+
+  putUser:
+    handler: src/handlers/users.put
+    events:
+      - http:
+          path: /user
+          method: put
+          integration: lambda
+          authorizer: authorize
+          cors: true
+
+  getUser:
+    handler: src/handlers/users.get
+    events:
+      - http:
+          path: /user
+          method: get
+          integration: lambda
+          authorizer: authorize
+          cors: true
+
+### Articles
+
+  articleBySlug:
+    handler: src/handlers/articles.bySlug
+    events:
+      - http:
+          path: /articles/{slug}
+          method: get
+          integration: lambda
+          cors: true
+
+  getArticles:
+    handler: src/handlers/articles.get
+    events:
+      - http:
+          path: /articles
+          method: get
+          integration: lambda
+          cors: true
+
+  postArticle:
+    handler: src/handlers/articles.post
+    events:
+      - http:
+          path: /articles
+          method: post
+          integration: lambda
+          authorizer: authorize
+          cors: true
+
+  favoriteArticle:
+    handler: src/handlers/articles.favorite
+    events:
+      - http:
+          path: /articles/{slug}/favorite
+          method: post
+          integration: lambda
+          authorizer: authorize
+          cors: true
+
+  unfavoriteArticle:
+    handler: src/handlers/articles.unFavorite
+    events:
+      - http:
+          path: /articles/{slug}/favorite
+          method: delete
+          integration: lambda
+          authorizer: authorize
+          cors: true
+
+  deleteArticle:
+    handler: src/handlers/articles.delete
+    events:
+      - http:
+          path: /articles/{slug}
+          method: delete
+          integration: lambda
+          authorizer: authorize
+          cors: true
+
+  feed:
+    handler: src/handlers/articles.feed
+    events:
+      - http:
+          path: /articles/feed
+          method: get
+          integration: lambda
+          authorizer: authorize
+          cors: true
+
+  putArticle:
+    handler: src/handlers/articles.put
+    events:
+      - http:
+          path: /articles/{slug}
+          method: put
+          integration: lambda
+          authorizer: authorize
+          cors: true
+
+# Articles (comments)
+  getComments:
+    handler: src/handlers/articles.getComments
+    events:
+      - http:
+          path: /articles/{slug}/comments
+          method: get
+          integration: lambda
+          cors: true
+
+  postComment:
+    handler: src/handlers/articles.postComment
+    events:
+      - http:
+          path: /articles/{slug}/comments
+          method: post
+          integration: lambda
+          authorizer: authorize
+          cors: true
+
+  deleteComment:
+    handler: src/handlers/articles.deleteComment
+    events:
+      - http:
+          path: /articles/{slug}/comments/{commentId}
+          method: delete
+          integration: lambda
+          authorizer: authorize
+          cors: true
+
+# Profiles
+  getProfile:
+    handler: src/handlers/profiles.get
+    events:
+      - http:
+          path: /profiles/{profile}
+          method: get
+          integration: lambda
+          authorizer: authorize
+          cors: true
+
+  followProfile:
+    handler: src/handlers/profiles.postFollow
+    events:
+      - http:
+          path: /profiles/{profile}/follow
+          method: post
+          integration: lambda
+          authorizer: authorize
+          cors: true
+
+  unfollowProfile:
+    handler: src/handlers/profiles.deleteFollow
+    events:
+      - http:
+          path: /profiles/{profile}/follow
+          method: delete
+          integration: lambda
+          authorizer: authorize
+          cors: true
