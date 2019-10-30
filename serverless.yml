@@ -24,7 +24,7 @@ plugins:
 #    createRoute53Record: true
 #    certificateName: 'api.sledbank.com'
 #    endpointType: 'regional'
-#   securityPolicy: tls_1_2
+#    securityPolicy: tls_1_2
 
 #  serverless-offline: # https://www.npmjs.com/package/serverless-offline
 #    port: 4000
@@ -38,6 +38,7 @@ functions:
   authorize:
     handler: src/handlers/authorize.handler
     cors: true
+    type: request
 
 # Tags
   tags:

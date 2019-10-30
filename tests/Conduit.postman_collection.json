@@ -146,6 +146,8 @@
 									"",
 									"if(tests['User has \"token\" property']){",
 									"    pm.globals.set('token', user.token);",
+									"    pm.environment.set('token', user.token);",
+
 									"}",
 									"",
 									"tests['Global variable \"token\" has been set'] = pm.globals.get('token') === user.token;",

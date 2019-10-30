@@ -1,8 +1,5 @@
 const jwt = require('jsonwebtoken')
 
-// https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html
-// https://github.com/yosriady/serverless-auth/blob/master/functions/authorize.js
-
 const buildIAMPolicy = (userId, effect, resource, context) => {
   return {
     principalId: userId,
@@ -12,22 +9,30 @@ const buildIAMPolicy = (userId, effect, resource, context) => {
         {
           Action: 'execute-api:Invoke',
           Effect: effect,
-          Resource: resource,
+          Resource: '*',
         },
       ],
     },
     context,
   }
+  /** Alex de Brie on using 'Resource: '*':
+   *  "Normally, using wildcards in IAM policies is a bad idea. In this situation, it seems more controlled and, thus, acceptable.
+   *  However, I’d love to know if this is a security hole. Please reach out if you know how this could be exploited.
+   */
 }
 
-module.exports.handler = (event, context, callback) => {
-  const token = event.authorizationToken.split('Token ')[1]
+// https://www.alexdebrie.com/posts/lambda-custom-authorizers/
+// https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html
+// https://github.com/yosriady/serverless-auth/blob/master/functions/authorize.js
 
+module.exports.handler = (event, context, callback) => {
   try {
-    console.log(token)
+    console.log('recieved event:', event)
+    const token = event.authorizationToken.split('Token ')[1]
+    console.log('splitted token:', token)
     // Verify JWT
     const decoded = jwt.verify(token, process.env.TOKEN_SECRET)
-
+    console.log(decoded)
     const user = decoded.username
 
     // Return an IAM policy document for the current endpoint (not using scopes, always just allow if jwt is valid)

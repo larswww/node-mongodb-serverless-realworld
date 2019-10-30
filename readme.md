@@ -20,14 +20,23 @@ Postman collection
 - modified to not require shellscript...?
 
 
+"However, this validation can greatly simplify your backend logic as you know you’ll be receiving valid data."
+
+"infrastructure-as-code"
+
 # How it works
 
 Most Serverless-tutorials will use Amazons DynamoDB or a SQL database, however this backend uses MongoDB Atlas. 
+
+
+
 
 It works just like all the other Real World Apps!
 
 
 API Gateway instead of Express.js
+https://www.alexdebrie.com/posts/api-gateway-elements/
+
 
 JSON Schema Validation
 

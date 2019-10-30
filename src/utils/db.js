@@ -4,6 +4,7 @@ const uri = process.env.MONGODB_URI
 mongoose.set('debug', true)
 // show the connections adding up in the mongod terminal thing
 
+// https://github.com/serverless/examples/tree/master/aws-node-mongodb-atlas
 // https://mongoosejs.com/docs/lambda.html
 module.exports.connect = async function (connection) {
   // See https://www.mongodb.com/blog/post/serverless-development-with-nodejs-aws-lambda-mongodb-atlas
