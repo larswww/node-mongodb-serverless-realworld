@@ -16,6 +16,10 @@ We've gone to great lengths to adhere to the **Serverless Framework** community 
 For more information on how to this works with other frontends/backends, head over to the [RealWorld](https://github.com/gothinkster/realworld) repo.
 
 
+Postman collection
+- modified to not require shellscript...?
+
+
 # How it works
 
 Most Serverless-tutorials will use Amazons DynamoDB or a SQL database, however this backend uses MongoDB Atlas. 

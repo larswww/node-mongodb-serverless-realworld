@@ -15,15 +15,26 @@ const articleSlug = async (event, context) => {
 }
 
 module.exports.bySlug = async (event, context) => {
-  let { Article, connection } = await db.connect(cachedDbConnection)
+  let { Article, User, connection } = await db.connect(cachedDbConnection)
   cachedDbConnection = connection
+
+  let userId
+  const authorizationToken = event.headers.Authorization
+  if (authorizationToken) {
+    userId = authorize.handler({ authorizationToken }, context, (error, res) => { return res.principalId })
+  }
+
+  let user = false
+  if (userId) {
+    user = await User.findById(userId)
+  }
 
   const slug = event.path.slug
   let article = await Article.findOne({ slug }).populate('author')
   if (!article) return { statusCode: 404 }
 
   // here its normally put on req so explain how to know what/how to return the article?
-  return { article }
+  return { article: article.toJSONFor(user) }
 }
 
 // todo auth optional routes?
@@ -123,18 +134,6 @@ module.exports.post = async (event, context) => {
 }
 
 // return a article
-
-//todo whats the difference between this and getting based on slug?
-// module.exports.getArticle = async (event, context) => {
-//   Promise.all([
-//     req.payload ? User.findById(req.payload.id) : null,
-//     req.article.populate('author').execPopulate()
-//   ]).then(function(results){
-//     var user = results[0];
-//
-//     return res.json({article: req.article.toJSONFor(user)});
-//   }).catch();
-// }
 
 // update article
 
