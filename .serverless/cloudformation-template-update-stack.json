@@ -219,7 +219,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/real-world-backend/dev/1572438547069-2019-10-30T12:29:07.069Z/real-world-backend.zip"
+          "S3Key": "serverless/real-world-backend/dev/1572518772418-2019-10-31T10:46:12.418Z/real-world-backend.zip"
         },
         "FunctionName": "real-world-backend-dev-authorize",
         "Handler": "src/handlers/authorize.handler",
@@ -245,14 +245,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "AuthorizeLambdaVersionfJ1cBaxoUxPZ11XNnskemM01xd3lSJHpqBhi5lCMfE": {
+    "AuthorizeLambdaVersionYrTJbkHhko4B1Ua7AbDeZUTPAaao4RehX7gJHYww": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "AuthorizeLambdaFunction"
         },
-        "CodeSha256": "m90/9o4U4vk/QL6njFHnsC+f8cHz874olWyQ5+Qleyc="
+        "CodeSha256": "sTZZJnTOCfvxYOjclPiL7ryabAm9za0jhnsVPBJGNLc="
       }
     },
     "TagsLambdaFunction": {
@@ -262,7 +262,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/real-world-backend/dev/1572438547069-2019-10-30T12:29:07.069Z/real-world-backend.zip"
+          "S3Key": "serverless/real-world-backend/dev/1572518772418-2019-10-31T10:46:12.418Z/real-world-backend.zip"
         },
         "FunctionName": "real-world-backend-dev-tags",
         "Handler": "src/handlers/tags.get",
@@ -288,14 +288,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "TagsLambdaVersionaXscV4bQvVDPbDr2ZVs245QuOwiUeBzwupOEjAhByM": {
+    "TagsLambdaVersion7KZhAShMHeEtqJlYlXrDPauaR8yLwwyu6TDdZE0HHM": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "TagsLambdaFunction"
         },
-        "CodeSha256": "m90/9o4U4vk/QL6njFHnsC+f8cHz874olWyQ5+Qleyc="
+        "CodeSha256": "sTZZJnTOCfvxYOjclPiL7ryabAm9za0jhnsVPBJGNLc="
       }
     },
     "PostUserLambdaFunction": {
@@ -305,7 +305,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/real-world-backend/dev/1572438547069-2019-10-30T12:29:07.069Z/real-world-backend.zip"
+          "S3Key": "serverless/real-world-backend/dev/1572518772418-2019-10-31T10:46:12.418Z/real-world-backend.zip"
         },
         "FunctionName": "real-world-backend-dev-postUser",
         "Handler": "src/handlers/users.postUser",
@@ -331,14 +331,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "PostUserLambdaVersionfzlPDR507JG03GktnIz8r2oZYze6SSlpCBr9Xmeqz78": {
+    "PostUserLambdaVersionjoxQypsVtApgxTsdttT4rAIWq1ByzkAkD90FSwA": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "PostUserLambdaFunction"
         },
-        "CodeSha256": "m90/9o4U4vk/QL6njFHnsC+f8cHz874olWyQ5+Qleyc="
+        "CodeSha256": "sTZZJnTOCfvxYOjclPiL7ryabAm9za0jhnsVPBJGNLc="
       }
     },
     "PostLoginLambdaFunction": {
@@ -348,7 +348,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/real-world-backend/dev/1572438547069-2019-10-30T12:29:07.069Z/real-world-backend.zip"
+          "S3Key": "serverless/real-world-backend/dev/1572518772418-2019-10-31T10:46:12.418Z/real-world-backend.zip"
         },
         "FunctionName": "real-world-backend-dev-postLogin",
         "Handler": "src/handlers/users.postLogin",
@@ -374,14 +374,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "PostLoginLambdaVersionvoMAiiXS6Ma81E0J1G9FWH8eYVXstPSp85zxJ5laKw": {
+    "PostLoginLambdaVersionQUlF5Pkl9pfpqFEnCSOIdOjF3CMXVoBO2t6vpAciPg": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "PostLoginLambdaFunction"
         },
-        "CodeSha256": "m90/9o4U4vk/QL6njFHnsC+f8cHz874olWyQ5+Qleyc="
+        "CodeSha256": "sTZZJnTOCfvxYOjclPiL7ryabAm9za0jhnsVPBJGNLc="
       }
     },
     "PutUserLambdaFunction": {
@@ -391,7 +391,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/real-world-backend/dev/1572438547069-2019-10-30T12:29:07.069Z/real-world-backend.zip"
+          "S3Key": "serverless/real-world-backend/dev/1572518772418-2019-10-31T10:46:12.418Z/real-world-backend.zip"
         },
         "FunctionName": "real-world-backend-dev-putUser",
         "Handler": "src/handlers/users.put",
@@ -417,14 +417,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "PutUserLambdaVersionv1Hiblrfkm5psNvv1FtwgX53ScAg6ulpCATUuMJDJc": {
+    "PutUserLambdaVersionQDiD34HLaWmaMmnkC4PCA1voLZMArO9ft7Ihg5v8r8": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "PutUserLambdaFunction"
         },
-        "CodeSha256": "m90/9o4U4vk/QL6njFHnsC+f8cHz874olWyQ5+Qleyc="
+        "CodeSha256": "sTZZJnTOCfvxYOjclPiL7ryabAm9za0jhnsVPBJGNLc="
       }
     },
     "GetUserLambdaFunction": {
@@ -434,7 +434,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/real-world-backend/dev/1572438547069-2019-10-30T12:29:07.069Z/real-world-backend.zip"
+          "S3Key": "serverless/real-world-backend/dev/1572518772418-2019-10-31T10:46:12.418Z/real-world-backend.zip"
         },
         "FunctionName": "real-world-backend-dev-getUser",
         "Handler": "src/handlers/users.get",
@@ -460,14 +460,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "GetUserLambdaVersion1vtsgxQWpQQiYxgccsp3MSYlHI1I5UteBBXMWY7Qgs": {
+    "GetUserLambdaVersionptUZupRFDj0MUg18HJyqKdlh0o1Q6Yar23joQNMPY": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetUserLambdaFunction"
         },
-        "CodeSha256": "m90/9o4U4vk/QL6njFHnsC+f8cHz874olWyQ5+Qleyc="
+        "CodeSha256": "sTZZJnTOCfvxYOjclPiL7ryabAm9za0jhnsVPBJGNLc="
       }
     },
     "ArticleBySlugLambdaFunction": {
@@ -477,7 +477,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/real-world-backend/dev/1572438547069-2019-10-30T12:29:07.069Z/real-world-backend.zip"
+          "S3Key": "serverless/real-world-backend/dev/1572518772418-2019-10-31T10:46:12.418Z/real-world-backend.zip"
         },
         "FunctionName": "real-world-backend-dev-articleBySlug",
         "Handler": "src/handlers/articles.bySlug",
@@ -503,14 +503,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "ArticleBySlugLambdaVersionoOgIG1emRBBFoaNozduuT4FlWTAUJsXJ98SRewrvJpM": {
+    "ArticleBySlugLambdaVersionlYMj5qne7UkzITOsyEF0vJnUyBjsuuAYze9yCEMK30": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ArticleBySlugLambdaFunction"
         },
-        "CodeSha256": "m90/9o4U4vk/QL6njFHnsC+f8cHz874olWyQ5+Qleyc="
+        "CodeSha256": "sTZZJnTOCfvxYOjclPiL7ryabAm9za0jhnsVPBJGNLc="
       }
     },
     "GetArticlesLambdaFunction": {
@@ -520,7 +520,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/real-world-backend/dev/1572438547069-2019-10-30T12:29:07.069Z/real-world-backend.zip"
+          "S3Key": "serverless/real-world-backend/dev/1572518772418-2019-10-31T10:46:12.418Z/real-world-backend.zip"
         },
         "FunctionName": "real-world-backend-dev-getArticles",
         "Handler": "src/handlers/articles.get",
@@ -546,14 +546,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "GetArticlesLambdaVersionu9ApVFmO0CLIWgMp8ciHh1aerqCITNDxCsY6wxI2dHI": {
+    "GetArticlesLambdaVersionSEwBAW85mtyd9zT1oJVhqqX1Png4nJCTFcLqWkV4Xk": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetArticlesLambdaFunction"
         },
-        "CodeSha256": "m90/9o4U4vk/QL6njFHnsC+f8cHz874olWyQ5+Qleyc="
+        "CodeSha256": "sTZZJnTOCfvxYOjclPiL7ryabAm9za0jhnsVPBJGNLc="
       }
     },
     "PostArticleLambdaFunction": {
@@ -563,7 +563,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/real-world-backend/dev/1572438547069-2019-10-30T12:29:07.069Z/real-world-backend.zip"
+          "S3Key": "serverless/real-world-backend/dev/1572518772418-2019-10-31T10:46:12.418Z/real-world-backend.zip"
         },
         "FunctionName": "real-world-backend-dev-postArticle",
         "Handler": "src/handlers/articles.post",
@@ -589,14 +589,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "PostArticleLambdaVersionw6bHsINCDrPeysVLhF3g1t9uABQl93jGLOAMviio0": {
+    "PostArticleLambdaVersionGNxJFNTc1ZjdpKL69ywxq2ZTvNS8OpevHbGpaWT0xTE": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "PostArticleLambdaFunction"
         },
-        "CodeSha256": "m90/9o4U4vk/QL6njFHnsC+f8cHz874olWyQ5+Qleyc="
+        "CodeSha256": "sTZZJnTOCfvxYOjclPiL7ryabAm9za0jhnsVPBJGNLc="
       }
     },
     "FavoriteArticleLambdaFunction": {
@@ -606,7 +606,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/real-world-backend/dev/1572438547069-2019-10-30T12:29:07.069Z/real-world-backend.zip"
+          "S3Key": "serverless/real-world-backend/dev/1572518772418-2019-10-31T10:46:12.418Z/real-world-backend.zip"
         },
         "FunctionName": "real-world-backend-dev-favoriteArticle",
         "Handler": "src/handlers/articles.favorite",
@@ -632,14 +632,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "FavoriteArticleLambdaVersionLdbk7AhQXk77m559qQbmgDDtcDK8xI1kMskv6Y9eXCc": {
+    "FavoriteArticleLambdaVersionIqdjTWVVRXjTmdPHgvLmNtrUUCzcMi1q7E1ydrxHk": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "FavoriteArticleLambdaFunction"
         },
-        "CodeSha256": "m90/9o4U4vk/QL6njFHnsC+f8cHz874olWyQ5+Qleyc="
+        "CodeSha256": "sTZZJnTOCfvxYOjclPiL7ryabAm9za0jhnsVPBJGNLc="
       }
     },
     "UnfavoriteArticleLambdaFunction": {
@@ -649,7 +649,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/real-world-backend/dev/1572438547069-2019-10-30T12:29:07.069Z/real-world-backend.zip"
+          "S3Key": "serverless/real-world-backend/dev/1572518772418-2019-10-31T10:46:12.418Z/real-world-backend.zip"
         },
         "FunctionName": "real-world-backend-dev-unfavoriteArticle",
         "Handler": "src/handlers/articles.unFavorite",
@@ -675,14 +675,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "UnfavoriteArticleLambdaVersionXp6XLfKOUsb8tb2gK3PUXCYWzxSZgDUHxXnNYixEpuo": {
+    "UnfavoriteArticleLambdaVersion82kVq3xiR21IdJQWgDS42ln6FDr77o161MdjdETFc": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "UnfavoriteArticleLambdaFunction"
         },
-        "CodeSha256": "m90/9o4U4vk/QL6njFHnsC+f8cHz874olWyQ5+Qleyc="
+        "CodeSha256": "sTZZJnTOCfvxYOjclPiL7ryabAm9za0jhnsVPBJGNLc="
       }
     },
     "DeleteArticleLambdaFunction": {
@@ -692,7 +692,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/real-world-backend/dev/1572438547069-2019-10-30T12:29:07.069Z/real-world-backend.zip"
+          "S3Key": "serverless/real-world-backend/dev/1572518772418-2019-10-31T10:46:12.418Z/real-world-backend.zip"
         },
         "FunctionName": "real-world-backend-dev-deleteArticle",
         "Handler": "src/handlers/articles.delete",
@@ -718,14 +718,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "DeleteArticleLambdaVersioncostbdUNaMh3ovmN8AZVjsCeHwzja8qVChFCYPjnI": {
+    "DeleteArticleLambdaVersioniD6trt1eU4y9Pcff6JCh979vyqdHnK7z3BeAJoiLbU": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteArticleLambdaFunction"
         },
-        "CodeSha256": "m90/9o4U4vk/QL6njFHnsC+f8cHz874olWyQ5+Qleyc="
+        "CodeSha256": "sTZZJnTOCfvxYOjclPiL7ryabAm9za0jhnsVPBJGNLc="
       }
     },
     "FeedLambdaFunction": {
@@ -735,7 +735,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/real-world-backend/dev/1572438547069-2019-10-30T12:29:07.069Z/real-world-backend.zip"
+          "S3Key": "serverless/real-world-backend/dev/1572518772418-2019-10-31T10:46:12.418Z/real-world-backend.zip"
         },
         "FunctionName": "real-world-backend-dev-feed",
         "Handler": "src/handlers/articles.feed",
@@ -761,14 +761,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "FeedLambdaVersionhao2CDwKMv3IYDTzTdgSWtpxMYpE5apWjzEKWvWU": {
+    "FeedLambdaVersionCGtZHn7A22Moe1CJZZbFolgcXR0Sk0JplWBMcbDJo": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "FeedLambdaFunction"
         },
-        "CodeSha256": "m90/9o4U4vk/QL6njFHnsC+f8cHz874olWyQ5+Qleyc="
+        "CodeSha256": "sTZZJnTOCfvxYOjclPiL7ryabAm9za0jhnsVPBJGNLc="
       }
     },
     "PutArticleLambdaFunction": {
@@ -778,7 +778,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/real-world-backend/dev/1572438547069-2019-10-30T12:29:07.069Z/real-world-backend.zip"
+          "S3Key": "serverless/real-world-backend/dev/1572518772418-2019-10-31T10:46:12.418Z/real-world-backend.zip"
         },
         "FunctionName": "real-world-backend-dev-putArticle",
         "Handler": "src/handlers/articles.put",
@@ -804,14 +804,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "PutArticleLambdaVersion5ByN1y1FJcvSQEunZtKCuvcgSGuyvybvalCfgD2YU": {
+    "PutArticleLambdaVersion4Bzc4qv0gCMKYIaS2qUizMIO5WqEsXO1KrHgGoCOwuw": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "PutArticleLambdaFunction"
         },
-        "CodeSha256": "m90/9o4U4vk/QL6njFHnsC+f8cHz874olWyQ5+Qleyc="
+        "CodeSha256": "sTZZJnTOCfvxYOjclPiL7ryabAm9za0jhnsVPBJGNLc="
       }
     },
     "GetCommentsLambdaFunction": {
@@ -821,7 +821,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/real-world-backend/dev/1572438547069-2019-10-30T12:29:07.069Z/real-world-backend.zip"
+          "S3Key": "serverless/real-world-backend/dev/1572518772418-2019-10-31T10:46:12.418Z/real-world-backend.zip"
         },
         "FunctionName": "real-world-backend-dev-getComments",
         "Handler": "src/handlers/articles.getComments",
@@ -847,14 +847,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "GetCommentsLambdaVersionQxfe5OFzfRCS1CBaTMKd9nWGOcFFBkvjg8iREX75k": {
+    "GetCommentsLambdaVersion6rtqfkTGN5WM4OZ15PW2cKYEqwrCW46IhTTHLjvTlfU": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetCommentsLambdaFunction"
         },
-        "CodeSha256": "m90/9o4U4vk/QL6njFHnsC+f8cHz874olWyQ5+Qleyc="
+        "CodeSha256": "sTZZJnTOCfvxYOjclPiL7ryabAm9za0jhnsVPBJGNLc="
       }
     },
     "PostCommentLambdaFunction": {
@@ -864,7 +864,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/real-world-backend/dev/1572438547069-2019-10-30T12:29:07.069Z/real-world-backend.zip"
+          "S3Key": "serverless/real-world-backend/dev/1572518772418-2019-10-31T10:46:12.418Z/real-world-backend.zip"
         },
         "FunctionName": "real-world-backend-dev-postComment",
         "Handler": "src/handlers/articles.postComment",
@@ -890,14 +890,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "PostCommentLambdaVersionmbxaSvR1Jg7oEnLLxjICLsa7b7YwqviLUOvNui67js": {
+    "PostCommentLambdaVersionOSiP3RAnS8F7frb07ddj5l5xiAaYyPCErg2P45lMf14": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "PostCommentLambdaFunction"
         },
-        "CodeSha256": "m90/9o4U4vk/QL6njFHnsC+f8cHz874olWyQ5+Qleyc="
+        "CodeSha256": "sTZZJnTOCfvxYOjclPiL7ryabAm9za0jhnsVPBJGNLc="
       }
     },
     "DeleteCommentLambdaFunction": {
@@ -907,7 +907,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/real-world-backend/dev/1572438547069-2019-10-30T12:29:07.069Z/real-world-backend.zip"
+          "S3Key": "serverless/real-world-backend/dev/1572518772418-2019-10-31T10:46:12.418Z/real-world-backend.zip"
         },
         "FunctionName": "real-world-backend-dev-deleteComment",
         "Handler": "src/handlers/articles.deleteComment",
@@ -933,14 +933,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "DeleteCommentLambdaVersionOfpEUIXAi6avqfsWAXm648hrI1VcvarW7pcwbv1i8": {
+    "DeleteCommentLambdaVersionoNxZBLIxKbtRSGvOMO7Gr6NDuvzWyehEtDO7tWjjw": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteCommentLambdaFunction"
         },
-        "CodeSha256": "m90/9o4U4vk/QL6njFHnsC+f8cHz874olWyQ5+Qleyc="
+        "CodeSha256": "sTZZJnTOCfvxYOjclPiL7ryabAm9za0jhnsVPBJGNLc="
       }
     },
     "GetProfileLambdaFunction": {
@@ -950,7 +950,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/real-world-backend/dev/1572438547069-2019-10-30T12:29:07.069Z/real-world-backend.zip"
+          "S3Key": "serverless/real-world-backend/dev/1572518772418-2019-10-31T10:46:12.418Z/real-world-backend.zip"
         },
         "FunctionName": "real-world-backend-dev-getProfile",
         "Handler": "src/handlers/profiles.get",
@@ -976,14 +976,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "GetProfileLambdaVersion94OzpD7K8cRgcYQcFIMU8CcaX1c113yhdIUhKd17o": {
+    "GetProfileLambdaVersionuN3FxVm4AxCUXBeqnrC7eMOVAA3IFQrCGIYeFAG5l0": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetProfileLambdaFunction"
         },
-        "CodeSha256": "m90/9o4U4vk/QL6njFHnsC+f8cHz874olWyQ5+Qleyc="
+        "CodeSha256": "sTZZJnTOCfvxYOjclPiL7ryabAm9za0jhnsVPBJGNLc="
       }
     },
     "FollowProfileLambdaFunction": {
@@ -993,7 +993,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/real-world-backend/dev/1572438547069-2019-10-30T12:29:07.069Z/real-world-backend.zip"
+          "S3Key": "serverless/real-world-backend/dev/1572518772418-2019-10-31T10:46:12.418Z/real-world-backend.zip"
         },
         "FunctionName": "real-world-backend-dev-followProfile",
         "Handler": "src/handlers/profiles.postFollow",
@@ -1019,14 +1019,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "FollowProfileLambdaVersionhzrdZ6OXaLmF7goqyjHXbHlZ3KDlduJKTWp9Z03uw": {
+    "FollowProfileLambdaVersionrMOo3wVvdyr1yIMo7kXYNsIOXshTKd9wOHd4vGV24p8": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "FollowProfileLambdaFunction"
         },
-        "CodeSha256": "m90/9o4U4vk/QL6njFHnsC+f8cHz874olWyQ5+Qleyc="
+        "CodeSha256": "sTZZJnTOCfvxYOjclPiL7ryabAm9za0jhnsVPBJGNLc="
       }
     },
     "UnfollowProfileLambdaFunction": {
@@ -1036,7 +1036,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/real-world-backend/dev/1572438547069-2019-10-30T12:29:07.069Z/real-world-backend.zip"
+          "S3Key": "serverless/real-world-backend/dev/1572518772418-2019-10-31T10:46:12.418Z/real-world-backend.zip"
         },
         "FunctionName": "real-world-backend-dev-unfollowProfile",
         "Handler": "src/handlers/profiles.deleteFollow",
@@ -1062,14 +1062,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "UnfollowProfileLambdaVersionUY1S2daOxlrJqthdHhlvWnA6RNljz98CestFF4FSpM": {
+    "UnfollowProfileLambdaVersionsxNFgkFqiI8as0sVBnpCaWn2GLcZuSP80bjc0xA5O8": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "UnfollowProfileLambdaFunction"
         },
-        "CodeSha256": "m90/9o4U4vk/QL6njFHnsC+f8cHz874olWyQ5+Qleyc="
+        "CodeSha256": "sTZZJnTOCfvxYOjclPiL7ryabAm9za0jhnsVPBJGNLc="
       }
     },
     "ApiGatewayRestApi": {
@@ -1833,7 +1833,7 @@
         "AuthorizationType": "NONE",
         "Integration": {
           "IntegrationHttpMethod": "POST",
-          "Type": "AWS",
+          "Type": "AWS_PROXY",
           "Uri": {
             "Fn::Join": [
               "",
@@ -1856,152 +1856,9 @@
                 "/invocations"
               ]
             ]
-          },
-          "PassthroughBehavior": "NEVER",
-          "RequestTemplates": {
-            "application/json": "\n    #set( $body = $input.json(\"$\") )\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  ",
-            "application/x-www-form-urlencoded": "\n    #define( $body )\n      {\n      #foreach( $token in $input.path('$').split('&') )\n        #set( $keyVal = $token.split('=') )\n        #set( $keyValSize = $keyVal.size() )\n        #if( $keyValSize >= 1 )\n          #set( $key = $util.escapeJavaScript($util.urlDecode($keyVal[0])) )\n          #if( $keyValSize >= 2 )\n            #set($val = $util.escapeJavaScript($util.urlDecode($keyVal[1])).replaceAll(\"\\\\'\",\"'\"))\n          #else\n            #set( $val = '' )\n          #end\n          \"$key\": \"$val\"#if($foreach.hasNext),#end\n        #end\n      #end\n      }\n    #end\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  "
-          },
-          "IntegrationResponses": [
-            {
-              "StatusCode": 200,
-              "SelectionPattern": "",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 400,
-              "SelectionPattern": "[\\s\\S]*\\[400\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 401,
-              "SelectionPattern": "[\\s\\S]*\\[401\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 403,
-              "SelectionPattern": "[\\s\\S]*\\[403\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 404,
-              "SelectionPattern": "[\\s\\S]*\\[404\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 422,
-              "SelectionPattern": "[\\s\\S]*\\[422\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 500,
-              "SelectionPattern": "[\\s\\S]*(Process\\s?exited\\s?before\\s?completing\\s?request|\\[500\\])[\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 502,
-              "SelectionPattern": "[\\s\\S]*\\[502\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 504,
-              "SelectionPattern": "([\\s\\S]*\\[504\\][\\s\\S]*)|(.*Task timed out after \\d+\\.\\d+ seconds$)",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            }
-          ]
-        },
-        "MethodResponses": [
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 200
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 400
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 401
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 403
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 404
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 422
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 500
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 502
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 504
           }
-        ]
+        },
+        "MethodResponses": []
       }
     },
     "ApiGatewayMethodUsersPost": {
@@ -2019,7 +1876,7 @@
         "AuthorizationType": "NONE",
         "Integration": {
           "IntegrationHttpMethod": "POST",
-          "Type": "AWS",
+          "Type": "AWS_PROXY",
           "Uri": {
             "Fn::Join": [
               "",
@@ -2042,152 +1899,9 @@
                 "/invocations"
               ]
             ]
-          },
-          "PassthroughBehavior": "NEVER",
-          "RequestTemplates": {
-            "application/json": "\n    #set( $body = $input.json(\"$\") )\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  ",
-            "application/x-www-form-urlencoded": "\n    #define( $body )\n      {\n      #foreach( $token in $input.path('$').split('&') )\n        #set( $keyVal = $token.split('=') )\n        #set( $keyValSize = $keyVal.size() )\n        #if( $keyValSize >= 1 )\n          #set( $key = $util.escapeJavaScript($util.urlDecode($keyVal[0])) )\n          #if( $keyValSize >= 2 )\n            #set($val = $util.escapeJavaScript($util.urlDecode($keyVal[1])).replaceAll(\"\\\\'\",\"'\"))\n          #else\n            #set( $val = '' )\n          #end\n          \"$key\": \"$val\"#if($foreach.hasNext),#end\n        #end\n      #end\n      }\n    #end\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  "
-          },
-          "IntegrationResponses": [
-            {
-              "StatusCode": 200,
-              "SelectionPattern": "",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 400,
-              "SelectionPattern": "[\\s\\S]*\\[400\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 401,
-              "SelectionPattern": "[\\s\\S]*\\[401\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 403,
-              "SelectionPattern": "[\\s\\S]*\\[403\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 404,
-              "SelectionPattern": "[\\s\\S]*\\[404\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 422,
-              "SelectionPattern": "[\\s\\S]*\\[422\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 500,
-              "SelectionPattern": "[\\s\\S]*(Process\\s?exited\\s?before\\s?completing\\s?request|\\[500\\])[\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 502,
-              "SelectionPattern": "[\\s\\S]*\\[502\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 504,
-              "SelectionPattern": "([\\s\\S]*\\[504\\][\\s\\S]*)|(.*Task timed out after \\d+\\.\\d+ seconds$)",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            }
-          ]
-        },
-        "MethodResponses": [
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 200
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 400
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 401
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 403
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 404
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 422
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 500
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 502
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 504
           }
-        ]
+        },
+        "MethodResponses": []
       }
     },
     "ApiGatewayMethodUsersLoginPost": {
@@ -2205,7 +1919,7 @@
         "AuthorizationType": "NONE",
         "Integration": {
           "IntegrationHttpMethod": "POST",
-          "Type": "AWS",
+          "Type": "AWS_PROXY",
           "Uri": {
             "Fn::Join": [
               "",
@@ -2228,152 +1942,9 @@
                 "/invocations"
               ]
             ]
-          },
-          "PassthroughBehavior": "NEVER",
-          "RequestTemplates": {
-            "application/json": "\n    #set( $body = $input.json(\"$\") )\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  ",
-            "application/x-www-form-urlencoded": "\n    #define( $body )\n      {\n      #foreach( $token in $input.path('$').split('&') )\n        #set( $keyVal = $token.split('=') )\n        #set( $keyValSize = $keyVal.size() )\n        #if( $keyValSize >= 1 )\n          #set( $key = $util.escapeJavaScript($util.urlDecode($keyVal[0])) )\n          #if( $keyValSize >= 2 )\n            #set($val = $util.escapeJavaScript($util.urlDecode($keyVal[1])).replaceAll(\"\\\\'\",\"'\"))\n          #else\n            #set( $val = '' )\n          #end\n          \"$key\": \"$val\"#if($foreach.hasNext),#end\n        #end\n      #end\n      }\n    #end\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  "
-          },
-          "IntegrationResponses": [
-            {
-              "StatusCode": 200,
-              "SelectionPattern": "",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 400,
-              "SelectionPattern": "[\\s\\S]*\\[400\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 401,
-              "SelectionPattern": "[\\s\\S]*\\[401\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 403,
-              "SelectionPattern": "[\\s\\S]*\\[403\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 404,
-              "SelectionPattern": "[\\s\\S]*\\[404\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 422,
-              "SelectionPattern": "[\\s\\S]*\\[422\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 500,
-              "SelectionPattern": "[\\s\\S]*(Process\\s?exited\\s?before\\s?completing\\s?request|\\[500\\])[\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 502,
-              "SelectionPattern": "[\\s\\S]*\\[502\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 504,
-              "SelectionPattern": "([\\s\\S]*\\[504\\][\\s\\S]*)|(.*Task timed out after \\d+\\.\\d+ seconds$)",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            }
-          ]
-        },
-        "MethodResponses": [
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 200
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 400
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 401
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 403
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 404
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 422
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 500
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 502
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 504
           }
-        ]
+        },
+        "MethodResponses": []
       }
     },
     "ApiGatewayMethodUserPut": {
@@ -2394,7 +1965,7 @@
         },
         "Integration": {
           "IntegrationHttpMethod": "POST",
-          "Type": "AWS",
+          "Type": "AWS_PROXY",
           "Uri": {
             "Fn::Join": [
               "",
@@ -2417,152 +1988,9 @@
                 "/invocations"
               ]
             ]
-          },
-          "PassthroughBehavior": "NEVER",
-          "RequestTemplates": {
-            "application/json": "\n    #set( $body = $input.json(\"$\") )\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  ",
-            "application/x-www-form-urlencoded": "\n    #define( $body )\n      {\n      #foreach( $token in $input.path('$').split('&') )\n        #set( $keyVal = $token.split('=') )\n        #set( $keyValSize = $keyVal.size() )\n        #if( $keyValSize >= 1 )\n          #set( $key = $util.escapeJavaScript($util.urlDecode($keyVal[0])) )\n          #if( $keyValSize >= 2 )\n            #set($val = $util.escapeJavaScript($util.urlDecode($keyVal[1])).replaceAll(\"\\\\'\",\"'\"))\n          #else\n            #set( $val = '' )\n          #end\n          \"$key\": \"$val\"#if($foreach.hasNext),#end\n        #end\n      #end\n      }\n    #end\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  "
-          },
-          "IntegrationResponses": [
-            {
-              "StatusCode": 200,
-              "SelectionPattern": "",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 400,
-              "SelectionPattern": "[\\s\\S]*\\[400\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 401,
-              "SelectionPattern": "[\\s\\S]*\\[401\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 403,
-              "SelectionPattern": "[\\s\\S]*\\[403\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 404,
-              "SelectionPattern": "[\\s\\S]*\\[404\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 422,
-              "SelectionPattern": "[\\s\\S]*\\[422\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 500,
-              "SelectionPattern": "[\\s\\S]*(Process\\s?exited\\s?before\\s?completing\\s?request|\\[500\\])[\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 502,
-              "SelectionPattern": "[\\s\\S]*\\[502\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 504,
-              "SelectionPattern": "([\\s\\S]*\\[504\\][\\s\\S]*)|(.*Task timed out after \\d+\\.\\d+ seconds$)",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            }
-          ]
-        },
-        "MethodResponses": [
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 200
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 400
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 401
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 403
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 404
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 422
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 500
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 502
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 504
           }
-        ]
+        },
+        "MethodResponses": []
       },
       "DependsOn": "AuthorizeApiGatewayAuthorizer"
     },
@@ -2584,7 +2012,7 @@
         },
         "Integration": {
           "IntegrationHttpMethod": "POST",
-          "Type": "AWS",
+          "Type": "AWS_PROXY",
           "Uri": {
             "Fn::Join": [
               "",
@@ -2607,152 +2035,9 @@
                 "/invocations"
               ]
             ]
-          },
-          "PassthroughBehavior": "NEVER",
-          "RequestTemplates": {
-            "application/json": "\n    #set( $body = $input.json(\"$\") )\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  ",
-            "application/x-www-form-urlencoded": "\n    #define( $body )\n      {\n      #foreach( $token in $input.path('$').split('&') )\n        #set( $keyVal = $token.split('=') )\n        #set( $keyValSize = $keyVal.size() )\n        #if( $keyValSize >= 1 )\n          #set( $key = $util.escapeJavaScript($util.urlDecode($keyVal[0])) )\n          #if( $keyValSize >= 2 )\n            #set($val = $util.escapeJavaScript($util.urlDecode($keyVal[1])).replaceAll(\"\\\\'\",\"'\"))\n          #else\n            #set( $val = '' )\n          #end\n          \"$key\": \"$val\"#if($foreach.hasNext),#end\n        #end\n      #end\n      }\n    #end\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  "
-          },
-          "IntegrationResponses": [
-            {
-              "StatusCode": 200,
-              "SelectionPattern": "",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 400,
-              "SelectionPattern": "[\\s\\S]*\\[400\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 401,
-              "SelectionPattern": "[\\s\\S]*\\[401\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 403,
-              "SelectionPattern": "[\\s\\S]*\\[403\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 404,
-              "SelectionPattern": "[\\s\\S]*\\[404\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 422,
-              "SelectionPattern": "[\\s\\S]*\\[422\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 500,
-              "SelectionPattern": "[\\s\\S]*(Process\\s?exited\\s?before\\s?completing\\s?request|\\[500\\])[\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 502,
-              "SelectionPattern": "[\\s\\S]*\\[502\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 504,
-              "SelectionPattern": "([\\s\\S]*\\[504\\][\\s\\S]*)|(.*Task timed out after \\d+\\.\\d+ seconds$)",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            }
-          ]
-        },
-        "MethodResponses": [
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 200
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 400
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 401
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 403
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 404
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 422
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 500
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 502
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 504
           }
-        ]
+        },
+        "MethodResponses": []
       },
       "DependsOn": "AuthorizeApiGatewayAuthorizer"
     },
@@ -2771,7 +2056,7 @@
         "AuthorizationType": "NONE",
         "Integration": {
           "IntegrationHttpMethod": "POST",
-          "Type": "AWS",
+          "Type": "AWS_PROXY",
           "Uri": {
             "Fn::Join": [
               "",
@@ -2794,152 +2079,9 @@
                 "/invocations"
               ]
             ]
-          },
-          "PassthroughBehavior": "NEVER",
-          "RequestTemplates": {
-            "application/json": "\n    #set( $body = $input.json(\"$\") )\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  ",
-            "application/x-www-form-urlencoded": "\n    #define( $body )\n      {\n      #foreach( $token in $input.path('$').split('&') )\n        #set( $keyVal = $token.split('=') )\n        #set( $keyValSize = $keyVal.size() )\n        #if( $keyValSize >= 1 )\n          #set( $key = $util.escapeJavaScript($util.urlDecode($keyVal[0])) )\n          #if( $keyValSize >= 2 )\n            #set($val = $util.escapeJavaScript($util.urlDecode($keyVal[1])).replaceAll(\"\\\\'\",\"'\"))\n          #else\n            #set( $val = '' )\n          #end\n          \"$key\": \"$val\"#if($foreach.hasNext),#end\n        #end\n      #end\n      }\n    #end\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  "
-          },
-          "IntegrationResponses": [
-            {
-              "StatusCode": 200,
-              "SelectionPattern": "",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 400,
-              "SelectionPattern": "[\\s\\S]*\\[400\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 401,
-              "SelectionPattern": "[\\s\\S]*\\[401\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 403,
-              "SelectionPattern": "[\\s\\S]*\\[403\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 404,
-              "SelectionPattern": "[\\s\\S]*\\[404\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 422,
-              "SelectionPattern": "[\\s\\S]*\\[422\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 500,
-              "SelectionPattern": "[\\s\\S]*(Process\\s?exited\\s?before\\s?completing\\s?request|\\[500\\])[\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 502,
-              "SelectionPattern": "[\\s\\S]*\\[502\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 504,
-              "SelectionPattern": "([\\s\\S]*\\[504\\][\\s\\S]*)|(.*Task timed out after \\d+\\.\\d+ seconds$)",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            }
-          ]
-        },
-        "MethodResponses": [
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 200
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 400
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 401
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 403
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 404
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 422
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 500
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 502
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 504
           }
-        ]
+        },
+        "MethodResponses": []
       }
     },
     "ApiGatewayMethodArticlesGet": {
@@ -2957,7 +2099,7 @@
         "AuthorizationType": "NONE",
         "Integration": {
           "IntegrationHttpMethod": "POST",
-          "Type": "AWS",
+          "Type": "AWS_PROXY",
           "Uri": {
             "Fn::Join": [
               "",
@@ -2980,152 +2122,9 @@
                 "/invocations"
               ]
             ]
-          },
-          "PassthroughBehavior": "NEVER",
-          "RequestTemplates": {
-            "application/json": "\n    #set( $body = $input.json(\"$\") )\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  ",
-            "application/x-www-form-urlencoded": "\n    #define( $body )\n      {\n      #foreach( $token in $input.path('$').split('&') )\n        #set( $keyVal = $token.split('=') )\n        #set( $keyValSize = $keyVal.size() )\n        #if( $keyValSize >= 1 )\n          #set( $key = $util.escapeJavaScript($util.urlDecode($keyVal[0])) )\n          #if( $keyValSize >= 2 )\n            #set($val = $util.escapeJavaScript($util.urlDecode($keyVal[1])).replaceAll(\"\\\\'\",\"'\"))\n          #else\n            #set( $val = '' )\n          #end\n          \"$key\": \"$val\"#if($foreach.hasNext),#end\n        #end\n      #end\n      }\n    #end\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  "
-          },
-          "IntegrationResponses": [
-            {
-              "StatusCode": 200,
-              "SelectionPattern": "",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 400,
-              "SelectionPattern": "[\\s\\S]*\\[400\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 401,
-              "SelectionPattern": "[\\s\\S]*\\[401\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 403,
-              "SelectionPattern": "[\\s\\S]*\\[403\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 404,
-              "SelectionPattern": "[\\s\\S]*\\[404\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 422,
-              "SelectionPattern": "[\\s\\S]*\\[422\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 500,
-              "SelectionPattern": "[\\s\\S]*(Process\\s?exited\\s?before\\s?completing\\s?request|\\[500\\])[\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 502,
-              "SelectionPattern": "[\\s\\S]*\\[502\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 504,
-              "SelectionPattern": "([\\s\\S]*\\[504\\][\\s\\S]*)|(.*Task timed out after \\d+\\.\\d+ seconds$)",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            }
-          ]
-        },
-        "MethodResponses": [
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 200
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 400
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 401
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 403
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 404
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 422
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 500
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 502
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 504
           }
-        ]
+        },
+        "MethodResponses": []
       }
     },
     "ApiGatewayMethodArticlesPost": {
@@ -3146,7 +2145,7 @@
         },
         "Integration": {
           "IntegrationHttpMethod": "POST",
-          "Type": "AWS",
+          "Type": "AWS_PROXY",
           "Uri": {
             "Fn::Join": [
               "",
@@ -3169,152 +2168,9 @@
                 "/invocations"
               ]
             ]
-          },
-          "PassthroughBehavior": "NEVER",
-          "RequestTemplates": {
-            "application/json": "\n    #set( $body = $input.json(\"$\") )\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  ",
-            "application/x-www-form-urlencoded": "\n    #define( $body )\n      {\n      #foreach( $token in $input.path('$').split('&') )\n        #set( $keyVal = $token.split('=') )\n        #set( $keyValSize = $keyVal.size() )\n        #if( $keyValSize >= 1 )\n          #set( $key = $util.escapeJavaScript($util.urlDecode($keyVal[0])) )\n          #if( $keyValSize >= 2 )\n            #set($val = $util.escapeJavaScript($util.urlDecode($keyVal[1])).replaceAll(\"\\\\'\",\"'\"))\n          #else\n            #set( $val = '' )\n          #end\n          \"$key\": \"$val\"#if($foreach.hasNext),#end\n        #end\n      #end\n      }\n    #end\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  "
-          },
-          "IntegrationResponses": [
-            {
-              "StatusCode": 200,
-              "SelectionPattern": "",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 400,
-              "SelectionPattern": "[\\s\\S]*\\[400\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 401,
-              "SelectionPattern": "[\\s\\S]*\\[401\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 403,
-              "SelectionPattern": "[\\s\\S]*\\[403\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 404,
-              "SelectionPattern": "[\\s\\S]*\\[404\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 422,
-              "SelectionPattern": "[\\s\\S]*\\[422\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 500,
-              "SelectionPattern": "[\\s\\S]*(Process\\s?exited\\s?before\\s?completing\\s?request|\\[500\\])[\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 502,
-              "SelectionPattern": "[\\s\\S]*\\[502\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 504,
-              "SelectionPattern": "([\\s\\S]*\\[504\\][\\s\\S]*)|(.*Task timed out after \\d+\\.\\d+ seconds$)",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            }
-          ]
-        },
-        "MethodResponses": [
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 200
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 400
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 401
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 403
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 404
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 422
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 500
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 502
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 504
           }
-        ]
+        },
+        "MethodResponses": []
       },
       "DependsOn": "AuthorizeApiGatewayAuthorizer"
     },
@@ -3336,7 +2192,7 @@
         },
         "Integration": {
           "IntegrationHttpMethod": "POST",
-          "Type": "AWS",
+          "Type": "AWS_PROXY",
           "Uri": {
             "Fn::Join": [
               "",
@@ -3359,152 +2215,9 @@
                 "/invocations"
               ]
             ]
-          },
-          "PassthroughBehavior": "NEVER",
-          "RequestTemplates": {
-            "application/json": "\n    #set( $body = $input.json(\"$\") )\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  ",
-            "application/x-www-form-urlencoded": "\n    #define( $body )\n      {\n      #foreach( $token in $input.path('$').split('&') )\n        #set( $keyVal = $token.split('=') )\n        #set( $keyValSize = $keyVal.size() )\n        #if( $keyValSize >= 1 )\n          #set( $key = $util.escapeJavaScript($util.urlDecode($keyVal[0])) )\n          #if( $keyValSize >= 2 )\n            #set($val = $util.escapeJavaScript($util.urlDecode($keyVal[1])).replaceAll(\"\\\\'\",\"'\"))\n          #else\n            #set( $val = '' )\n          #end\n          \"$key\": \"$val\"#if($foreach.hasNext),#end\n        #end\n      #end\n      }\n    #end\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  "
-          },
-          "IntegrationResponses": [
-            {
-              "StatusCode": 200,
-              "SelectionPattern": "",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 400,
-              "SelectionPattern": "[\\s\\S]*\\[400\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 401,
-              "SelectionPattern": "[\\s\\S]*\\[401\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 403,
-              "SelectionPattern": "[\\s\\S]*\\[403\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 404,
-              "SelectionPattern": "[\\s\\S]*\\[404\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 422,
-              "SelectionPattern": "[\\s\\S]*\\[422\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 500,
-              "SelectionPattern": "[\\s\\S]*(Process\\s?exited\\s?before\\s?completing\\s?request|\\[500\\])[\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 502,
-              "SelectionPattern": "[\\s\\S]*\\[502\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 504,
-              "SelectionPattern": "([\\s\\S]*\\[504\\][\\s\\S]*)|(.*Task timed out after \\d+\\.\\d+ seconds$)",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            }
-          ]
-        },
-        "MethodResponses": [
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 200
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 400
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 401
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 403
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 404
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 422
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 500
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 502
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 504
           }
-        ]
+        },
+        "MethodResponses": []
       },
       "DependsOn": "AuthorizeApiGatewayAuthorizer"
     },
@@ -3526,7 +2239,7 @@
         },
         "Integration": {
           "IntegrationHttpMethod": "POST",
-          "Type": "AWS",
+          "Type": "AWS_PROXY",
           "Uri": {
             "Fn::Join": [
               "",
@@ -3549,152 +2262,9 @@
                 "/invocations"
               ]
             ]
-          },
-          "PassthroughBehavior": "NEVER",
-          "RequestTemplates": {
-            "application/json": "\n    #set( $body = $input.json(\"$\") )\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  ",
-            "application/x-www-form-urlencoded": "\n    #define( $body )\n      {\n      #foreach( $token in $input.path('$').split('&') )\n        #set( $keyVal = $token.split('=') )\n        #set( $keyValSize = $keyVal.size() )\n        #if( $keyValSize >= 1 )\n          #set( $key = $util.escapeJavaScript($util.urlDecode($keyVal[0])) )\n          #if( $keyValSize >= 2 )\n            #set($val = $util.escapeJavaScript($util.urlDecode($keyVal[1])).replaceAll(\"\\\\'\",\"'\"))\n          #else\n            #set( $val = '' )\n          #end\n          \"$key\": \"$val\"#if($foreach.hasNext),#end\n        #end\n      #end\n      }\n    #end\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  "
-          },
-          "IntegrationResponses": [
-            {
-              "StatusCode": 200,
-              "SelectionPattern": "",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 400,
-              "SelectionPattern": "[\\s\\S]*\\[400\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 401,
-              "SelectionPattern": "[\\s\\S]*\\[401\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 403,
-              "SelectionPattern": "[\\s\\S]*\\[403\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 404,
-              "SelectionPattern": "[\\s\\S]*\\[404\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 422,
-              "SelectionPattern": "[\\s\\S]*\\[422\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 500,
-              "SelectionPattern": "[\\s\\S]*(Process\\s?exited\\s?before\\s?completing\\s?request|\\[500\\])[\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 502,
-              "SelectionPattern": "[\\s\\S]*\\[502\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 504,
-              "SelectionPattern": "([\\s\\S]*\\[504\\][\\s\\S]*)|(.*Task timed out after \\d+\\.\\d+ seconds$)",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            }
-          ]
-        },
-        "MethodResponses": [
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 200
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 400
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 401
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 403
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 404
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 422
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 500
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 502
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 504
           }
-        ]
+        },
+        "MethodResponses": []
       },
       "DependsOn": "AuthorizeApiGatewayAuthorizer"
     },
@@ -3716,7 +2286,7 @@
         },
         "Integration": {
           "IntegrationHttpMethod": "POST",
-          "Type": "AWS",
+          "Type": "AWS_PROXY",
           "Uri": {
             "Fn::Join": [
               "",
@@ -3739,152 +2309,9 @@
                 "/invocations"
               ]
             ]
-          },
-          "PassthroughBehavior": "NEVER",
-          "RequestTemplates": {
-            "application/json": "\n    #set( $body = $input.json(\"$\") )\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  ",
-            "application/x-www-form-urlencoded": "\n    #define( $body )\n      {\n      #foreach( $token in $input.path('$').split('&') )\n        #set( $keyVal = $token.split('=') )\n        #set( $keyValSize = $keyVal.size() )\n        #if( $keyValSize >= 1 )\n          #set( $key = $util.escapeJavaScript($util.urlDecode($keyVal[0])) )\n          #if( $keyValSize >= 2 )\n            #set($val = $util.escapeJavaScript($util.urlDecode($keyVal[1])).replaceAll(\"\\\\'\",\"'\"))\n          #else\n            #set( $val = '' )\n          #end\n          \"$key\": \"$val\"#if($foreach.hasNext),#end\n        #end\n      #end\n      }\n    #end\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  "
-          },
-          "IntegrationResponses": [
-            {
-              "StatusCode": 200,
-              "SelectionPattern": "",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 400,
-              "SelectionPattern": "[\\s\\S]*\\[400\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 401,
-              "SelectionPattern": "[\\s\\S]*\\[401\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 403,
-              "SelectionPattern": "[\\s\\S]*\\[403\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 404,
-              "SelectionPattern": "[\\s\\S]*\\[404\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 422,
-              "SelectionPattern": "[\\s\\S]*\\[422\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 500,
-              "SelectionPattern": "[\\s\\S]*(Process\\s?exited\\s?before\\s?completing\\s?request|\\[500\\])[\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 502,
-              "SelectionPattern": "[\\s\\S]*\\[502\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 504,
-              "SelectionPattern": "([\\s\\S]*\\[504\\][\\s\\S]*)|(.*Task timed out after \\d+\\.\\d+ seconds$)",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            }
-          ]
-        },
-        "MethodResponses": [
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 200
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 400
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 401
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 403
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 404
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 422
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 500
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 502
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 504
           }
-        ]
+        },
+        "MethodResponses": []
       },
       "DependsOn": "AuthorizeApiGatewayAuthorizer"
     },
@@ -3906,7 +2333,7 @@
         },
         "Integration": {
           "IntegrationHttpMethod": "POST",
-          "Type": "AWS",
+          "Type": "AWS_PROXY",
           "Uri": {
             "Fn::Join": [
               "",
@@ -3929,152 +2356,9 @@
                 "/invocations"
               ]
             ]
-          },
-          "PassthroughBehavior": "NEVER",
-          "RequestTemplates": {
-            "application/json": "\n    #set( $body = $input.json(\"$\") )\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  ",
-            "application/x-www-form-urlencoded": "\n    #define( $body )\n      {\n      #foreach( $token in $input.path('$').split('&') )\n        #set( $keyVal = $token.split('=') )\n        #set( $keyValSize = $keyVal.size() )\n        #if( $keyValSize >= 1 )\n          #set( $key = $util.escapeJavaScript($util.urlDecode($keyVal[0])) )\n          #if( $keyValSize >= 2 )\n            #set($val = $util.escapeJavaScript($util.urlDecode($keyVal[1])).replaceAll(\"\\\\'\",\"'\"))\n          #else\n            #set( $val = '' )\n          #end\n          \"$key\": \"$val\"#if($foreach.hasNext),#end\n        #end\n      #end\n      }\n    #end\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  "
-          },
-          "IntegrationResponses": [
-            {
-              "StatusCode": 200,
-              "SelectionPattern": "",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 400,
-              "SelectionPattern": "[\\s\\S]*\\[400\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 401,
-              "SelectionPattern": "[\\s\\S]*\\[401\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 403,
-              "SelectionPattern": "[\\s\\S]*\\[403\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 404,
-              "SelectionPattern": "[\\s\\S]*\\[404\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 422,
-              "SelectionPattern": "[\\s\\S]*\\[422\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 500,
-              "SelectionPattern": "[\\s\\S]*(Process\\s?exited\\s?before\\s?completing\\s?request|\\[500\\])[\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 502,
-              "SelectionPattern": "[\\s\\S]*\\[502\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 504,
-              "SelectionPattern": "([\\s\\S]*\\[504\\][\\s\\S]*)|(.*Task timed out after \\d+\\.\\d+ seconds$)",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            }
-          ]
-        },
-        "MethodResponses": [
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 200
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 400
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 401
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 403
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 404
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 422
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 500
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 502
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 504
           }
-        ]
+        },
+        "MethodResponses": []
       },
       "DependsOn": "AuthorizeApiGatewayAuthorizer"
     },
@@ -4096,7 +2380,7 @@
         },
         "Integration": {
           "IntegrationHttpMethod": "POST",
-          "Type": "AWS",
+          "Type": "AWS_PROXY",
           "Uri": {
             "Fn::Join": [
               "",
@@ -4119,152 +2403,9 @@
                 "/invocations"
               ]
             ]
-          },
-          "PassthroughBehavior": "NEVER",
-          "RequestTemplates": {
-            "application/json": "\n    #set( $body = $input.json(\"$\") )\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  ",
-            "application/x-www-form-urlencoded": "\n    #define( $body )\n      {\n      #foreach( $token in $input.path('$').split('&') )\n        #set( $keyVal = $token.split('=') )\n        #set( $keyValSize = $keyVal.size() )\n        #if( $keyValSize >= 1 )\n          #set( $key = $util.escapeJavaScript($util.urlDecode($keyVal[0])) )\n          #if( $keyValSize >= 2 )\n            #set($val = $util.escapeJavaScript($util.urlDecode($keyVal[1])).replaceAll(\"\\\\'\",\"'\"))\n          #else\n            #set( $val = '' )\n          #end\n          \"$key\": \"$val\"#if($foreach.hasNext),#end\n        #end\n      #end\n      }\n    #end\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  "
-          },
-          "IntegrationResponses": [
-            {
-              "StatusCode": 200,
-              "SelectionPattern": "",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 400,
-              "SelectionPattern": "[\\s\\S]*\\[400\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 401,
-              "SelectionPattern": "[\\s\\S]*\\[401\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 403,
-              "SelectionPattern": "[\\s\\S]*\\[403\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 404,
-              "SelectionPattern": "[\\s\\S]*\\[404\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 422,
-              "SelectionPattern": "[\\s\\S]*\\[422\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 500,
-              "SelectionPattern": "[\\s\\S]*(Process\\s?exited\\s?before\\s?completing\\s?request|\\[500\\])[\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 502,
-              "SelectionPattern": "[\\s\\S]*\\[502\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 504,
-              "SelectionPattern": "([\\s\\S]*\\[504\\][\\s\\S]*)|(.*Task timed out after \\d+\\.\\d+ seconds$)",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            }
-          ]
-        },
-        "MethodResponses": [
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 200
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 400
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 401
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 403
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 404
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 422
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 500
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 502
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 504
           }
-        ]
+        },
+        "MethodResponses": []
       },
       "DependsOn": "AuthorizeApiGatewayAuthorizer"
     },
@@ -4283,7 +2424,7 @@
         "AuthorizationType": "NONE",
         "Integration": {
           "IntegrationHttpMethod": "POST",
-          "Type": "AWS",
+          "Type": "AWS_PROXY",
           "Uri": {
             "Fn::Join": [
               "",
@@ -4306,152 +2447,9 @@
                 "/invocations"
               ]
             ]
-          },
-          "PassthroughBehavior": "NEVER",
-          "RequestTemplates": {
-            "application/json": "\n    #set( $body = $input.json(\"$\") )\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  ",
-            "application/x-www-form-urlencoded": "\n    #define( $body )\n      {\n      #foreach( $token in $input.path('$').split('&') )\n        #set( $keyVal = $token.split('=') )\n        #set( $keyValSize = $keyVal.size() )\n        #if( $keyValSize >= 1 )\n          #set( $key = $util.escapeJavaScript($util.urlDecode($keyVal[0])) )\n          #if( $keyValSize >= 2 )\n            #set($val = $util.escapeJavaScript($util.urlDecode($keyVal[1])).replaceAll(\"\\\\'\",\"'\"))\n          #else\n            #set( $val = '' )\n          #end\n          \"$key\": \"$val\"#if($foreach.hasNext),#end\n        #end\n      #end\n      }\n    #end\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  "
-          },
-          "IntegrationResponses": [
-            {
-              "StatusCode": 200,
-              "SelectionPattern": "",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 400,
-              "SelectionPattern": "[\\s\\S]*\\[400\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 401,
-              "SelectionPattern": "[\\s\\S]*\\[401\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 403,
-              "SelectionPattern": "[\\s\\S]*\\[403\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 404,
-              "SelectionPattern": "[\\s\\S]*\\[404\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 422,
-              "SelectionPattern": "[\\s\\S]*\\[422\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 500,
-              "SelectionPattern": "[\\s\\S]*(Process\\s?exited\\s?before\\s?completing\\s?request|\\[500\\])[\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 502,
-              "SelectionPattern": "[\\s\\S]*\\[502\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 504,
-              "SelectionPattern": "([\\s\\S]*\\[504\\][\\s\\S]*)|(.*Task timed out after \\d+\\.\\d+ seconds$)",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            }
-          ]
-        },
-        "MethodResponses": [
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 200
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 400
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 401
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 403
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 404
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 422
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 500
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 502
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 504
           }
-        ]
+        },
+        "MethodResponses": []
       }
     },
     "ApiGatewayMethodArticlesSlugVarCommentsPost": {
@@ -4472,7 +2470,7 @@
         },
         "Integration": {
           "IntegrationHttpMethod": "POST",
-          "Type": "AWS",
+          "Type": "AWS_PROXY",
           "Uri": {
             "Fn::Join": [
               "",
@@ -4495,152 +2493,9 @@
                 "/invocations"
               ]
             ]
-          },
-          "PassthroughBehavior": "NEVER",
-          "RequestTemplates": {
-            "application/json": "\n    #set( $body = $input.json(\"$\") )\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  ",
-            "application/x-www-form-urlencoded": "\n    #define( $body )\n      {\n      #foreach( $token in $input.path('$').split('&') )\n        #set( $keyVal = $token.split('=') )\n        #set( $keyValSize = $keyVal.size() )\n        #if( $keyValSize >= 1 )\n          #set( $key = $util.escapeJavaScript($util.urlDecode($keyVal[0])) )\n          #if( $keyValSize >= 2 )\n            #set($val = $util.escapeJavaScript($util.urlDecode($keyVal[1])).replaceAll(\"\\\\'\",\"'\"))\n          #else\n            #set( $val = '' )\n          #end\n          \"$key\": \"$val\"#if($foreach.hasNext),#end\n        #end\n      #end\n      }\n    #end\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  "
-          },
-          "IntegrationResponses": [
-            {
-              "StatusCode": 200,
-              "SelectionPattern": "",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 400,
-              "SelectionPattern": "[\\s\\S]*\\[400\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 401,
-              "SelectionPattern": "[\\s\\S]*\\[401\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 403,
-              "SelectionPattern": "[\\s\\S]*\\[403\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 404,
-              "SelectionPattern": "[\\s\\S]*\\[404\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 422,
-              "SelectionPattern": "[\\s\\S]*\\[422\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 500,
-              "SelectionPattern": "[\\s\\S]*(Process\\s?exited\\s?before\\s?completing\\s?request|\\[500\\])[\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 502,
-              "SelectionPattern": "[\\s\\S]*\\[502\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 504,
-              "SelectionPattern": "([\\s\\S]*\\[504\\][\\s\\S]*)|(.*Task timed out after \\d+\\.\\d+ seconds$)",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            }
-          ]
-        },
-        "MethodResponses": [
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 200
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 400
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 401
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 403
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 404
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 422
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 500
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 502
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 504
           }
-        ]
+        },
+        "MethodResponses": []
       },
       "DependsOn": "AuthorizeApiGatewayAuthorizer"
     },
@@ -4662,7 +2517,7 @@
         },
         "Integration": {
           "IntegrationHttpMethod": "POST",
-          "Type": "AWS",
+          "Type": "AWS_PROXY",
           "Uri": {
             "Fn::Join": [
               "",
@@ -4685,152 +2540,9 @@
                 "/invocations"
               ]
             ]
-          },
-          "PassthroughBehavior": "NEVER",
-          "RequestTemplates": {
-            "application/json": "\n    #set( $body = $input.json(\"$\") )\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  ",
-            "application/x-www-form-urlencoded": "\n    #define( $body )\n      {\n      #foreach( $token in $input.path('$').split('&') )\n        #set( $keyVal = $token.split('=') )\n        #set( $keyValSize = $keyVal.size() )\n        #if( $keyValSize >= 1 )\n          #set( $key = $util.escapeJavaScript($util.urlDecode($keyVal[0])) )\n          #if( $keyValSize >= 2 )\n            #set($val = $util.escapeJavaScript($util.urlDecode($keyVal[1])).replaceAll(\"\\\\'\",\"'\"))\n          #else\n            #set( $val = '' )\n          #end\n          \"$key\": \"$val\"#if($foreach.hasNext),#end\n        #end\n      #end\n      }\n    #end\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  "
-          },
-          "IntegrationResponses": [
-            {
-              "StatusCode": 200,
-              "SelectionPattern": "",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 400,
-              "SelectionPattern": "[\\s\\S]*\\[400\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 401,
-              "SelectionPattern": "[\\s\\S]*\\[401\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 403,
-              "SelectionPattern": "[\\s\\S]*\\[403\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 404,
-              "SelectionPattern": "[\\s\\S]*\\[404\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 422,
-              "SelectionPattern": "[\\s\\S]*\\[422\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 500,
-              "SelectionPattern": "[\\s\\S]*(Process\\s?exited\\s?before\\s?completing\\s?request|\\[500\\])[\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 502,
-              "SelectionPattern": "[\\s\\S]*\\[502\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 504,
-              "SelectionPattern": "([\\s\\S]*\\[504\\][\\s\\S]*)|(.*Task timed out after \\d+\\.\\d+ seconds$)",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            }
-          ]
-        },
-        "MethodResponses": [
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 200
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 400
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 401
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 403
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 404
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 422
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 500
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 502
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 504
           }
-        ]
+        },
+        "MethodResponses": []
       },
       "DependsOn": "AuthorizeApiGatewayAuthorizer"
     },
@@ -4852,7 +2564,7 @@
         },
         "Integration": {
           "IntegrationHttpMethod": "POST",
-          "Type": "AWS",
+          "Type": "AWS_PROXY",
           "Uri": {
             "Fn::Join": [
               "",
@@ -4875,152 +2587,9 @@
                 "/invocations"
               ]
             ]
-          },
-          "PassthroughBehavior": "NEVER",
-          "RequestTemplates": {
-            "application/json": "\n    #set( $body = $input.json(\"$\") )\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  ",
-            "application/x-www-form-urlencoded": "\n    #define( $body )\n      {\n      #foreach( $token in $input.path('$').split('&') )\n        #set( $keyVal = $token.split('=') )\n        #set( $keyValSize = $keyVal.size() )\n        #if( $keyValSize >= 1 )\n          #set( $key = $util.escapeJavaScript($util.urlDecode($keyVal[0])) )\n          #if( $keyValSize >= 2 )\n            #set($val = $util.escapeJavaScript($util.urlDecode($keyVal[1])).replaceAll(\"\\\\'\",\"'\"))\n          #else\n            #set( $val = '' )\n          #end\n          \"$key\": \"$val\"#if($foreach.hasNext),#end\n        #end\n      #end\n      }\n    #end\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  "
-          },
-          "IntegrationResponses": [
-            {
-              "StatusCode": 200,
-              "SelectionPattern": "",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 400,
-              "SelectionPattern": "[\\s\\S]*\\[400\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 401,
-              "SelectionPattern": "[\\s\\S]*\\[401\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 403,
-              "SelectionPattern": "[\\s\\S]*\\[403\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 404,
-              "SelectionPattern": "[\\s\\S]*\\[404\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 422,
-              "SelectionPattern": "[\\s\\S]*\\[422\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 500,
-              "SelectionPattern": "[\\s\\S]*(Process\\s?exited\\s?before\\s?completing\\s?request|\\[500\\])[\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 502,
-              "SelectionPattern": "[\\s\\S]*\\[502\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 504,
-              "SelectionPattern": "([\\s\\S]*\\[504\\][\\s\\S]*)|(.*Task timed out after \\d+\\.\\d+ seconds$)",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            }
-          ]
-        },
-        "MethodResponses": [
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 200
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 400
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 401
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 403
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 404
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 422
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 500
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 502
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 504
           }
-        ]
+        },
+        "MethodResponses": []
       },
       "DependsOn": "AuthorizeApiGatewayAuthorizer"
     },
@@ -5042,7 +2611,7 @@
         },
         "Integration": {
           "IntegrationHttpMethod": "POST",
-          "Type": "AWS",
+          "Type": "AWS_PROXY",
           "Uri": {
             "Fn::Join": [
               "",
@@ -5065,152 +2634,9 @@
                 "/invocations"
               ]
             ]
-          },
-          "PassthroughBehavior": "NEVER",
-          "RequestTemplates": {
-            "application/json": "\n    #set( $body = $input.json(\"$\") )\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  ",
-            "application/x-www-form-urlencoded": "\n    #define( $body )\n      {\n      #foreach( $token in $input.path('$').split('&') )\n        #set( $keyVal = $token.split('=') )\n        #set( $keyValSize = $keyVal.size() )\n        #if( $keyValSize >= 1 )\n          #set( $key = $util.escapeJavaScript($util.urlDecode($keyVal[0])) )\n          #if( $keyValSize >= 2 )\n            #set($val = $util.escapeJavaScript($util.urlDecode($keyVal[1])).replaceAll(\"\\\\'\",\"'\"))\n          #else\n            #set( $val = '' )\n          #end\n          \"$key\": \"$val\"#if($foreach.hasNext),#end\n        #end\n      #end\n      }\n    #end\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  "
-          },
-          "IntegrationResponses": [
-            {
-              "StatusCode": 200,
-              "SelectionPattern": "",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 400,
-              "SelectionPattern": "[\\s\\S]*\\[400\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 401,
-              "SelectionPattern": "[\\s\\S]*\\[401\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 403,
-              "SelectionPattern": "[\\s\\S]*\\[403\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 404,
-              "SelectionPattern": "[\\s\\S]*\\[404\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 422,
-              "SelectionPattern": "[\\s\\S]*\\[422\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 500,
-              "SelectionPattern": "[\\s\\S]*(Process\\s?exited\\s?before\\s?completing\\s?request|\\[500\\])[\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 502,
-              "SelectionPattern": "[\\s\\S]*\\[502\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 504,
-              "SelectionPattern": "([\\s\\S]*\\[504\\][\\s\\S]*)|(.*Task timed out after \\d+\\.\\d+ seconds$)",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            }
-          ]
-        },
-        "MethodResponses": [
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 200
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 400
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 401
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 403
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 404
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 422
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 500
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 502
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 504
           }
-        ]
+        },
+        "MethodResponses": []
       },
       "DependsOn": "AuthorizeApiGatewayAuthorizer"
     },
@@ -5232,7 +2658,7 @@
         },
         "Integration": {
           "IntegrationHttpMethod": "POST",
-          "Type": "AWS",
+          "Type": "AWS_PROXY",
           "Uri": {
             "Fn::Join": [
               "",
@@ -5255,152 +2681,9 @@
                 "/invocations"
               ]
             ]
-          },
-          "PassthroughBehavior": "NEVER",
-          "RequestTemplates": {
-            "application/json": "\n    #set( $body = $input.json(\"$\") )\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  ",
-            "application/x-www-form-urlencoded": "\n    #define( $body )\n      {\n      #foreach( $token in $input.path('$').split('&') )\n        #set( $keyVal = $token.split('=') )\n        #set( $keyValSize = $keyVal.size() )\n        #if( $keyValSize >= 1 )\n          #set( $key = $util.escapeJavaScript($util.urlDecode($keyVal[0])) )\n          #if( $keyValSize >= 2 )\n            #set($val = $util.escapeJavaScript($util.urlDecode($keyVal[1])).replaceAll(\"\\\\'\",\"'\"))\n          #else\n            #set( $val = '' )\n          #end\n          \"$key\": \"$val\"#if($foreach.hasNext),#end\n        #end\n      #end\n      }\n    #end\n\n    \n  #define( $loop )\n    {\n    #foreach($key in $map.keySet())\n        #set( $k = $util.escapeJavaScript($key) )\n        #set( $v = $util.escapeJavaScript($map.get($key)).replaceAll(\"\\\\'\", \"'\") )\n        \"$k\":\n          \"$v\"\n          #if( $foreach.hasNext ) , #end\n    #end\n    }\n  #end\n\n  {\n    \"body\": $body,\n    \"method\": \"$context.httpMethod\",\n    \"principalId\": \"$context.authorizer.principalId\",\n    \"stage\": \"$context.stage\",\n\n    \"cognitoPoolClaims\" : {\n       \n       \"sub\": \"$context.authorizer.claims.sub\"\n    },\n\n    #set( $map = $context.authorizer )\n    \"enhancedAuthContext\": $loop,\n\n    #set( $map = $input.params().header )\n    \"headers\": $loop,\n\n    #set( $map = $input.params().querystring )\n    \"query\": $loop,\n\n    #set( $map = $input.params().path )\n    \"path\": $loop,\n\n    #set( $map = $context.identity )\n    \"identity\": $loop,\n\n    #set( $map = $stageVariables )\n    \"stageVariables\": $loop,\n\n    \"requestPath\": \"$context.resourcePath\"\n  }\n\n  "
-          },
-          "IntegrationResponses": [
-            {
-              "StatusCode": 200,
-              "SelectionPattern": "",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 400,
-              "SelectionPattern": "[\\s\\S]*\\[400\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 401,
-              "SelectionPattern": "[\\s\\S]*\\[401\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 403,
-              "SelectionPattern": "[\\s\\S]*\\[403\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 404,
-              "SelectionPattern": "[\\s\\S]*\\[404\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 422,
-              "SelectionPattern": "[\\s\\S]*\\[422\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 500,
-              "SelectionPattern": "[\\s\\S]*(Process\\s?exited\\s?before\\s?completing\\s?request|\\[500\\])[\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 502,
-              "SelectionPattern": "[\\s\\S]*\\[502\\][\\s\\S]*",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            },
-            {
-              "StatusCode": 504,
-              "SelectionPattern": "([\\s\\S]*\\[504\\][\\s\\S]*)|(.*Task timed out after \\d+\\.\\d+ seconds$)",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              },
-              "ResponseTemplates": {}
-            }
-          ]
-        },
-        "MethodResponses": [
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 200
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 400
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 401
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 403
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 404
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 422
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 500
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 502
-          },
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true
-            },
-            "ResponseModels": {},
-            "StatusCode": 504
           }
-        ]
+        },
+        "MethodResponses": []
       },
       "DependsOn": "AuthorizeApiGatewayAuthorizer"
     },
@@ -5438,7 +2721,7 @@
         "Type": "TOKEN"
       }
     },
-    "ApiGatewayDeployment1572438539044": {
+    "ApiGatewayDeployment1572518764484": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -6195,6 +3478,19 @@
           ]
         }
       }
+    },
+    "GatewayResponseDefault4XX": {
+      "Type": "AWS::ApiGateway::GatewayResponse",
+      "Properties": {
+        "ResponseParameters": {
+          "gatewayresponse.header.Access-Control-Allow-Origin": "'*'",
+          "gatewayresponse.header.Access-Control-Allow-Headers": "'*'"
+        },
+        "ResponseType": "DEFAULT_4XX",
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
     }
   },
   "Outputs": {
@@ -6206,121 +3502,121 @@
     "AuthorizeLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "AuthorizeLambdaVersionfJ1cBaxoUxPZ11XNnskemM01xd3lSJHpqBhi5lCMfE"
+        "Ref": "AuthorizeLambdaVersionYrTJbkHhko4B1Ua7AbDeZUTPAaao4RehX7gJHYww"
       }
     },
     "TagsLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "TagsLambdaVersionaXscV4bQvVDPbDr2ZVs245QuOwiUeBzwupOEjAhByM"
+        "Ref": "TagsLambdaVersion7KZhAShMHeEtqJlYlXrDPauaR8yLwwyu6TDdZE0HHM"
       }
     },
     "PostUserLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "PostUserLambdaVersionfzlPDR507JG03GktnIz8r2oZYze6SSlpCBr9Xmeqz78"
+        "Ref": "PostUserLambdaVersionjoxQypsVtApgxTsdttT4rAIWq1ByzkAkD90FSwA"
       }
     },
     "PostLoginLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "PostLoginLambdaVersionvoMAiiXS6Ma81E0J1G9FWH8eYVXstPSp85zxJ5laKw"
+        "Ref": "PostLoginLambdaVersionQUlF5Pkl9pfpqFEnCSOIdOjF3CMXVoBO2t6vpAciPg"
       }
     },
     "PutUserLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "PutUserLambdaVersionv1Hiblrfkm5psNvv1FtwgX53ScAg6ulpCATUuMJDJc"
+        "Ref": "PutUserLambdaVersionQDiD34HLaWmaMmnkC4PCA1voLZMArO9ft7Ihg5v8r8"
       }
     },
     "GetUserLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetUserLambdaVersion1vtsgxQWpQQiYxgccsp3MSYlHI1I5UteBBXMWY7Qgs"
+        "Ref": "GetUserLambdaVersionptUZupRFDj0MUg18HJyqKdlh0o1Q6Yar23joQNMPY"
       }
     },
     "ArticleBySlugLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ArticleBySlugLambdaVersionoOgIG1emRBBFoaNozduuT4FlWTAUJsXJ98SRewrvJpM"
+        "Ref": "ArticleBySlugLambdaVersionlYMj5qne7UkzITOsyEF0vJnUyBjsuuAYze9yCEMK30"
       }
     },
     "GetArticlesLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetArticlesLambdaVersionu9ApVFmO0CLIWgMp8ciHh1aerqCITNDxCsY6wxI2dHI"
+        "Ref": "GetArticlesLambdaVersionSEwBAW85mtyd9zT1oJVhqqX1Png4nJCTFcLqWkV4Xk"
       }
     },
     "PostArticleLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "PostArticleLambdaVersionw6bHsINCDrPeysVLhF3g1t9uABQl93jGLOAMviio0"
+        "Ref": "PostArticleLambdaVersionGNxJFNTc1ZjdpKL69ywxq2ZTvNS8OpevHbGpaWT0xTE"
       }
     },
     "FavoriteArticleLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "FavoriteArticleLambdaVersionLdbk7AhQXk77m559qQbmgDDtcDK8xI1kMskv6Y9eXCc"
+        "Ref": "FavoriteArticleLambdaVersionIqdjTWVVRXjTmdPHgvLmNtrUUCzcMi1q7E1ydrxHk"
       }
     },
     "UnfavoriteArticleLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "UnfavoriteArticleLambdaVersionXp6XLfKOUsb8tb2gK3PUXCYWzxSZgDUHxXnNYixEpuo"
+        "Ref": "UnfavoriteArticleLambdaVersion82kVq3xiR21IdJQWgDS42ln6FDr77o161MdjdETFc"
       }
     },
     "DeleteArticleLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteArticleLambdaVersioncostbdUNaMh3ovmN8AZVjsCeHwzja8qVChFCYPjnI"
+        "Ref": "DeleteArticleLambdaVersioniD6trt1eU4y9Pcff6JCh979vyqdHnK7z3BeAJoiLbU"
       }
     },
     "FeedLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "FeedLambdaVersionhao2CDwKMv3IYDTzTdgSWtpxMYpE5apWjzEKWvWU"
+        "Ref": "FeedLambdaVersionCGtZHn7A22Moe1CJZZbFolgcXR0Sk0JplWBMcbDJo"
       }
     },
     "PutArticleLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "PutArticleLambdaVersion5ByN1y1FJcvSQEunZtKCuvcgSGuyvybvalCfgD2YU"
+        "Ref": "PutArticleLambdaVersion4Bzc4qv0gCMKYIaS2qUizMIO5WqEsXO1KrHgGoCOwuw"
       }
     },
     "GetCommentsLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetCommentsLambdaVersionQxfe5OFzfRCS1CBaTMKd9nWGOcFFBkvjg8iREX75k"
+        "Ref": "GetCommentsLambdaVersion6rtqfkTGN5WM4OZ15PW2cKYEqwrCW46IhTTHLjvTlfU"
       }
     },
     "PostCommentLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "PostCommentLambdaVersionmbxaSvR1Jg7oEnLLxjICLsa7b7YwqviLUOvNui67js"
+        "Ref": "PostCommentLambdaVersionOSiP3RAnS8F7frb07ddj5l5xiAaYyPCErg2P45lMf14"
       }
     },
     "DeleteCommentLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteCommentLambdaVersionOfpEUIXAi6avqfsWAXm648hrI1VcvarW7pcwbv1i8"
+        "Ref": "DeleteCommentLambdaVersionoNxZBLIxKbtRSGvOMO7Gr6NDuvzWyehEtDO7tWjjw"
       }
     },
     "GetProfileLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetProfileLambdaVersion94OzpD7K8cRgcYQcFIMU8CcaX1c113yhdIUhKd17o"
+        "Ref": "GetProfileLambdaVersionuN3FxVm4AxCUXBeqnrC7eMOVAA3IFQrCGIYeFAG5l0"
       }
     },
     "FollowProfileLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "FollowProfileLambdaVersionhzrdZ6OXaLmF7goqyjHXbHlZ3KDlduJKTWp9Z03uw"
+        "Ref": "FollowProfileLambdaVersionrMOo3wVvdyr1yIMo7kXYNsIOXshTKd9wOHd4vGV24p8"
       }
     },
     "UnfollowProfileLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "UnfollowProfileLambdaVersionUY1S2daOxlrJqthdHhlvWnA6RNljz98CestFF4FSpM"
+        "Ref": "UnfollowProfileLambdaVersionsxNFgkFqiI8as0sVBnpCaWn2GLcZuSP80bjc0xA5O8"
       }
     },
     "ServiceEndpoint": {

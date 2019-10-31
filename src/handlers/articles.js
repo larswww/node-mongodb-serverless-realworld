@@ -1,4 +1,5 @@
 const db = require('../utils/db')
+const reply = require('../utils/responseHelper')
 let cachedDbConnection = null
 const authorize = require('./authorize')
 
@@ -8,10 +9,10 @@ const articleSlug = async (event, context) => {
 
   const slug = event.path.slug
   let article = await Article.findOne({ slug }).populate('author')
-  if (!article) return { statusCode: 404 }
+  if (!article) return reply(404)
 
   // here its normally put on req so explain how to know what/how to return the article?
-  return { article }
+  return reply()
 }
 
 module.exports.bySlug = async (event, context) => {
@@ -29,12 +30,12 @@ module.exports.bySlug = async (event, context) => {
     user = await User.findById(userId)
   }
 
-  const slug = event.path.slug
+  const slug = event.pathParameters.slug
   let article = await Article.findOne({ slug }).populate('author')
-  if (!article) return { statusCode: 404 }
+  if (!article) return reply(404)
 
   // here its normally put on req so explain how to know what/how to return the article?
-  return { article: article.toJSONFor(user) }
+  return reply(200, { article: article.toJSONFor(user) })
 }
 
 // todo auth optional routes?
@@ -54,9 +55,10 @@ module.exports.get = async (event, context) => {
   }
 
   const query = {}
-  let limit = event.query.limit || 20
-  let offset = event.query.offset || 0
-  if (event.query.tag) query.tagList = { '$in': [event.query.tag] }
+  event.queryStringParameters = event.queryStringParameters || {} // would be undefined if no query is included
+  let limit = event.queryStringParameters.limit || 20
+  let offset = event.queryStringParameters.offset || 0
+  if (event.queryStringParameters.tag) query.tagList = { '$in': [event.queryStringParameters.tag] }
 
   let [author, favoriter] = await Promise.all([
     query.author ? User.findOne({ username: query.author }) : null,
@@ -84,23 +86,22 @@ module.exports.get = async (event, context) => {
     userId ? User.findById(userId) : null,
   ])
 
-  return {
-    articles: articles.map(function (article) {
-      return article.toJSONFor(user)
-    }),
+  return reply(200, {
+    articles: articles.map(article => { return article.toJSONFor(user)}),
     articlesCount: articlesCount
-  }
+  })
 
 }
 
 module.exports.feed = async (event, context) => {
   let { User, Article, connection } = await db.connect(cachedDbConnection)
   cachedDbConnection = connection
-  const limit = event.query.limit || 20
-  const offset = event.query.offset || 0
+  event.queryStringParameters = event.queryStringParameters || {}
+  const limit = event.queryStringParameters.limit || 20
+  const offset = event.queryStringParameters.offset || 0
 
-  let user = await User.findById(event.enhancedAuthContext.principalId)
-  if (!user) return { statusCode: 401 }
+  let user = await User.findById(event.requestContext.authorizer.principalId)
+  if (!user) return reply(401)
 
   let [articles, articlesCount] = await Promise.all([
     Article.find({ author: { $in: user.following } })
@@ -111,26 +112,25 @@ module.exports.feed = async (event, context) => {
     Article.count({ author: { $in: user.following } })
   ])
 
-  return {
-    articles: articles.map(function (article) {
-      return article.toJSONFor(user)
-    }),
+  return reply(200, {
+    articles: articles.map(article => { return article.toJSONFor(user)}),
     articlesCount: articlesCount
-  }
+  })
 }
 
 module.exports.post = async (event, context) => {
   let { Article, User, connection } = await db.connect(cachedDbConnection)
   cachedDbConnection = connection
 
-  let user = await User.findById(event.enhancedAuthContext.principalId)
-  if (!user) return { statusCode: 401 }
+  let user = await User.findById(event.requestContext.authorizer.principalId)
+  if (!user) return reply(401)
 
+  event.body = JSON.parse(event.body)
   const article = new Article(event.body.article)
   article.author = user
   await article.save()
 
-  return { article: article.toJSONFor(user) }
+  return reply(200, { article: article.toJSONFor(user) })
 }
 
 // return a article
@@ -141,12 +141,13 @@ module.exports.put = async (event, context) => {
   let { User, Article, connection } = await db.connect(cachedDbConnection)
   cachedDbConnection = connection
 
-  const slug = event.path.slug
-  let user = await User.findById(event.enhancedAuthContext.principalId)
+  const slug = event.pathParameters.slug
+  let user = await User.findById(event.requestContext.authorizer.principalId)
   let article = await Article.findOne({ slug }).populate('author')
-  if (!article) return { statusCode: 404 }
-  if (article.author._id.toString() !== user._id.toString()) return { statusCode: 403 }
+  if (!article) return reply(404)
+  if (article.author._id.toString() !== user._id.toString()) return reply(403, {message: 'Author did not match User'})
 
+  event.body = JSON.parse(event.body)
   const { title, description, body, tagList } = event.body.article
   if (title) article.title = title
   if (description) article.description = description
@@ -156,27 +157,28 @@ module.exports.put = async (event, context) => {
   await article.save()
 
   console.log(article.toJSONFor(user))
-  return { article: article.toJSONFor(user) }
+  return reply(200, { article: article.toJSONFor(user) })
 }
 
 module.exports.favorite = async (event, context) => {
   let { Article, User, connection } = await db.connect(cachedDbConnection)
   cachedDbConnection = connection
 
-  let article = await Article.findOne({ slug: event.path.slug }).populate('author')
-  if (!article) return { statusCode: 401 }
+  const slug = event.pathParameters.slug
+  let article = await Article.findOne({ slug }).populate('author')
+  if (!article) return reply(401)
   const articleId = article._id
 
-  const userId = event.enhancedAuthContext.principalId
+  const userId = event.requestContext.authorizer.principalId
   let user = await User.findById(userId)
-  if (!user) return { statusCode: 401 }
+  if (!user) return reply(401)
 
   // updating mongoose install
   // updating mongoose uniqueValidator
 
   await user.favorite(articleId)
   await article.updateFavoriteCount(cachedDbConnection.model('User'))
-  return { article: article.toJSONFor(user) }
+  return reply(200, { article: article.toJSONFor(user) })
 
 }
 
@@ -184,18 +186,19 @@ module.exports.delete = async (event, context) => {
   let { Article, User, connection } = await db.connect(cachedDbConnection)
   cachedDbConnection = connection
 
-  let user = await User.findById(event.enhancedAuthContext.principalId)
-  if (!user) return { statusCode: 401 }
-  let articleToDelete = await Article.findOne({ slug: event.path.slug }).populate('author')
-  if (!articleToDelete) return { statusCode: 401 }
+  let user = await User.findById(event.requestContext.authorizer.principalId)
+  if (!user) return reply(401)
+  const slug = event.pathParameters.slug
+  let articleToDelete = await Article.findOne({ slug }).populate('author')
+  if (!articleToDelete) return reply(401)
 
   if (articleToDelete.author._id.toString() === user._id.toString()) {
     await articleToDelete.remove()
-    return {statusCode: 204 }
+    return reply(204)
 
   }
 
-  return {statusCode: 403 }
+  return reply(403)
 
 }
 
@@ -204,16 +207,17 @@ module.exports.unFavorite = async (event, context) => {
   let { Article, User, connection } = await db.connect(cachedDbConnection)
   cachedDbConnection = connection
 
-  const userId = event.enhancedAuthContext.principalId
+  const userId = event.requestContext.authorizer.principalId
   let user = await User.findById(userId)
-  if (!user) return { statusCode: 401 }
-  let article = await Article.findOne({ slug: event.path.slug }).populate('author')
-  if (!article) return { statusCode: 401 }
+  if (!user) return reply(401)
+  const slug = event.pathParameters.slug
+  let article = await Article.findOne({ slug }).populate('author')
+  if (!article) return reply(401)
   const articleId = article._id
 
   await user.unfavorite(articleId)
   await article.updateFavoriteCount(cachedDbConnection.model('User'))
-  return { article: article.toJSONFor(user) }
+  return reply(200, { article: article.toJSONFor(user) })
 }
 
 module.exports.getComments = async (event, context) => {
@@ -225,8 +229,9 @@ module.exports.getComments = async (event, context) => {
   if (authorizationToken) {
     userId = authorize.handler({ authorizationToken }, context, (error, res) => { return res.principalId })
   }
-  let article = await Article.findOne({ slug: event.path.slug }).populate('author')
-  if (!article) return { statusCode: 401 }
+  const slug = event.pathParameters.slug
+  let article = await Article.findOne({ slug }).populate('author')
+  if (!article) return reply(401)
 
   let user = await Promise.resolve(userId ? User.findById(userId) : null)
   let commentsPopulatedArticle = await article.populate({
@@ -241,23 +246,25 @@ module.exports.getComments = async (event, context) => {
     }
   }).execPopulate()
 
-  return {
+  return reply(200, {
     comments: commentsPopulatedArticle.comments.map(function (comment) {
       return comment.toJSONFor(user)
     })
-  }
+  })
 }
 
 module.exports.postComment = async (event, context) => {
   let { User, Article, Comment, connection } = await db.connect(cachedDbConnection)
   cachedDbConnection = connection
 
-  const userId = event.enhancedAuthContext.principalId
+  const slug = event.pathParameters.slug
+  const userId = event.requestContext.authorizer.principalId
   let user = await User.findById(userId)
-  if (!user) return { statusCode: 401 }
-  let article = await Article.findOne({ slug: event.path.slug }).populate('author')
-  if (!article) return { statusCode: 401 }
+  if (!user) return reply(401, {message: 'User not found'})
+  let article = await Article.findOne({ slug }).populate('author')
+  if (!article) return reply(401, {message: 'Article not found'})
 
+  event.body = JSON.parse(event.body)
   const comment = new Comment(event.body.comment)
   comment.article = article
   comment.author = user
@@ -265,27 +272,28 @@ module.exports.postComment = async (event, context) => {
   article.comments.push(comment)
   await article.save()
 
-  return { comment: comment.toJSONFor(user) }
+  return reply(200, { comment: comment.toJSONFor(user) })
 }
 
 module.exports.deleteComment = async (event, context) => {
   let { User, Article, Comment, connection } = await db.connect(cachedDbConnection)
   cachedDbConnection = connection
 
-  const userId = event.enhancedAuthContext.principalId
+  const slug = event.pathParameters.slug
+  const userId = event.requestContext.authorizer.principalId
   let user = await User.findById(userId)
-  if (!user) return { statusCode: 401 }
-  let article = await Article.findOne({ slug: event.path.slug }).populate('author')
-  if (!article) return { statusCode: 401 }
+  if (!user) return reply(401)
+  let article = await Article.findOne({ slug }).populate('author')
+  if (!article) return reply(401)
 
-  let comment = await Comment.findById(event.path.commentId)
-  if (!comment) return { statusCode: 404 }
-  if (userId !== comment.author.toString()) return { statusCode: 403 }
+  let comment = await Comment.findById(event.pathParameters.commentId)
+  if (!comment) return reply(404)
+  if (userId !== comment.author.toString()) return reply(403)
 
   await article.comments.remove(comment._id)
   await article.save()
   await Comment.find({ _id: comment._id }).remove().exec()
 
-  return { statusCode: 204 }
+  return reply(204)
 }
 

@@ -47,7 +47,7 @@ functions:
       - http:
           path: /tags
           method: get
-          integration: lambda
+#          integration: lambda
           cors: true
 
 # Users
@@ -57,7 +57,7 @@ functions:
       - http:
           path: /users
           method: post
-          integration: lambda # show what running without this looks like and how the payload becomes a string
+#          integration: lambda # show what running without this looks like and how the payload becomes a string
           cors: true
 
   postLogin:
@@ -66,7 +66,7 @@ functions:
       - http:
           path: /users/login
           method: post
-          integration: lambda
+#          integration: lambda
           cors: true
 
   putUser:
@@ -75,7 +75,7 @@ functions:
       - http:
           path: /user
           method: put
-          integration: lambda
+#          integration: lambda
           authorizer: authorize
           cors: true
 
@@ -85,7 +85,7 @@ functions:
       - http:
           path: /user
           method: get
-          integration: lambda
+#          integration: lambda
           authorizer: authorize
           cors: true
 
@@ -97,7 +97,7 @@ functions:
       - http:
           path: /articles/{slug}
           method: get
-          integration: lambda
+#          integration: lambda
           cors: true
 
   getArticles:
@@ -106,7 +106,7 @@ functions:
       - http:
           path: /articles
           method: get
-          integration: lambda
+#          integration: lambda
           cors: true
 
   postArticle:
@@ -115,7 +115,7 @@ functions:
       - http:
           path: /articles
           method: post
-          integration: lambda
+#          integration: lambda
           authorizer: authorize
           cors: true
 
@@ -125,7 +125,7 @@ functions:
       - http:
           path: /articles/{slug}/favorite
           method: post
-          integration: lambda
+#          integration: lambda
           authorizer: authorize
           cors: true
 
@@ -135,7 +135,7 @@ functions:
       - http:
           path: /articles/{slug}/favorite
           method: delete
-          integration: lambda
+#          integration: lambda
           authorizer: authorize
           cors: true
 
@@ -145,7 +145,7 @@ functions:
       - http:
           path: /articles/{slug}
           method: delete
-          integration: lambda
+#          integration: lambda
           authorizer: authorize
           cors: true
 
@@ -155,7 +155,7 @@ functions:
       - http:
           path: /articles/feed
           method: get
-          integration: lambda
+#          integration: lambda
           authorizer: authorize
           cors: true
 
@@ -165,7 +165,7 @@ functions:
       - http:
           path: /articles/{slug}
           method: put
-          integration: lambda
+#          integration: lambda
           authorizer: authorize
           cors: true
 
@@ -176,7 +176,7 @@ functions:
       - http:
           path: /articles/{slug}/comments
           method: get
-          integration: lambda
+#          integration: lambda
           cors: true
 
   postComment:
@@ -185,7 +185,7 @@ functions:
       - http:
           path: /articles/{slug}/comments
           method: post
-          integration: lambda
+#          integration: lambda
           authorizer: authorize
           cors: true
 
@@ -195,7 +195,7 @@ functions:
       - http:
           path: /articles/{slug}/comments/{commentId}
           method: delete
-          integration: lambda
+#          integration: lambda
           authorizer: authorize
           cors: true
 
@@ -206,7 +206,7 @@ functions:
       - http:
           path: /profiles/{profile}
           method: get
-          integration: lambda
+#          integration: lambda
           authorizer: authorize
           cors: true
 
@@ -216,7 +216,7 @@ functions:
       - http:
           path: /profiles/{profile}/follow
           method: post
-          integration: lambda
+#          integration: lambda
           authorizer: authorize
           cors: true
 
@@ -226,6 +226,23 @@ functions:
       - http:
           path: /profiles/{profile}/follow
           method: delete
-          integration: lambda
+#          integration: lambda
           authorizer: authorize
           cors: true
+
+# https://serverless.com/blog/cors-api-gateway-survival-guide/
+# https://auth0.com/docs/custom-domains/set-up-cloudfront
+# https://medium.com/@davidgurevich_11928/cloudfront-as-a-reverse-proxy-fb6a8dcbed96
+
+resources:
+
+  Resources:
+    GatewayResponseDefault4XX:
+      Type: 'AWS::ApiGateway::GatewayResponse'
+      Properties:
+        ResponseParameters:
+          gatewayresponse.header.Access-Control-Allow-Origin: "'*'"
+          gatewayresponse.header.Access-Control-Allow-Headers: "'*'"
+        ResponseType: DEFAULT_4XX
+        RestApiId:
+          Ref: 'ApiGatewayRestApi'

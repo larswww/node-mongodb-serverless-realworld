@@ -19,6 +19,7 @@ For more information on how to this works with other frontends/backends, head ov
 Postman collection
 - modified to not require shellscript...?
 
+"fast, global and cheap" (or free)
 
 "However, this validation can greatly simplify your backend logic as you know you’ll be receiving valid data."
 
