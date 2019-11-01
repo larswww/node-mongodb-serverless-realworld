@@ -1,12 +1,10 @@
 const db = require('../utils/db')
 const reply = require('../utils/responseHelper')
-let cachedDbConnection = null
+let dbConnection = null
 
 // return a list of tags
-module.exports.get = async (event, context) => {
-  let { Article, connection } = await db.connect(cachedDbConnection)
-  cachedDbConnection = connection
-
-  let tags = await Article.find().distinct('tagList')
+module.exports.get = async () => {
+  dbConnection = await db.connect(dbConnection)
+  let tags = await dbConnection.model('Article').find().distinct('tagList')
   return reply(200, { tags })
 }

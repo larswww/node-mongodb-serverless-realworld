@@ -28,5 +28,6 @@ module.exports = (statusCode, body, additionalHeaders) => {
   // some of the mongoose methods returns JSON as is
   if (body) res.body = (typeof  body === 'string') ? body : JSON.stringify(body)
 
+  console.log('reply:', res)
   return res
 }

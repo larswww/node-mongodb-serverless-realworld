@@ -30,7 +30,6 @@ plugins:
 #    port: 4000
 
 functions:
-
   # Authorization
   # Great articles:
   # https://yos.io/2017/09/03/serverless-authentication-with-jwt/

@@ -27,12 +27,9 @@ const buildIAMPolicy = (userId, effect, resource, context) => {
 
 module.exports.handler = (event, context, callback) => {
   try {
-    console.log('recieved event:', event)
     const token = event.authorizationToken.split('Token ')[1]
-    console.log('splitted token:', token)
     // Verify JWT
     const decoded = jwt.verify(token, process.env.TOKEN_SECRET)
-    console.log(decoded)
     const user = decoded.username
 
     // Return an IAM policy document for the current endpoint (not using scopes, always just allow if jwt is valid)

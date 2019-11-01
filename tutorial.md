@@ -10,3 +10,5 @@ show running newman, creating the env using globals...
 
 (can save/set these in aws console if you prefer)
 
+how to deploy the frontend:
+https://www.youtube.com/watch?v=ts26BVuX3j0

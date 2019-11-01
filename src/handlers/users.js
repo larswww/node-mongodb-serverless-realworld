@@ -1,26 +1,24 @@
 const db = require('../utils/db')
 const reply = require('../utils/responseHelper')
-let cachedDbConnection = null
+let dbConnection = null
 
 // when setting up webstorm debug mention that command line is required for auto-reloading the code!
 module.exports.get = async (event, context) => {
-  let { User, connection } = await db.connect(cachedDbConnection)
-  cachedDbConnection = connection
+  dbConnection = await db.connect(dbConnection)
 
   const id = event.requestContext.authorizer.principalId
-  let user = await User.findById(id)
+  let user = await dbConnection.model('User').findById(id)
   if (!user) return reply(401)
 
   return reply(200, { user: user.toAuthJSON() })
 }
 
 module.exports.put = async (event, context) => {
-  let { User, connection } = await db.connect(cachedDbConnection)
-  cachedDbConnection = connection
+  dbConnection = await db.connect(dbConnection)
 
   const id = event.requestContext.authorizer.principalId
 
-  let user = await User.findById(id)
+  let user = await dbConnection.model('User').findById(id)
   if (!user) return reply(401)
 
   event.body = JSON.parse(event.body)
@@ -37,11 +35,11 @@ module.exports.put = async (event, context) => {
 }
 
 module.exports.postUser = async (event, context) => {
-  let { User, connection } = await db.connect(cachedDbConnection)
-  cachedDbConnection = connection
+  dbConnection = await db.connect(dbConnection)
 
   event.body = JSON.parse(event.body)
   const { username, email, password } = event.body.user
+  const User = dbConnection.model('User')
   let user = new User()
   user.username = username
   user.email = email
@@ -49,18 +47,16 @@ module.exports.postUser = async (event, context) => {
 
   await user.save().catch(e => {
     console.error(e)})
-
   // show the password not being 8 chars going wrong and how annoying that is
   return reply(200, { user: user.toAuthJSON() })
 }
 
 module.exports.postLogin = async (event, context) => {
-  let { User, connection } = await db.connect(cachedDbConnection)
-  cachedDbConnection = connection
+  dbConnection = await db.connect(dbConnection)
 
   event.body = JSON.parse(event.body)
   const { email, password } = event.body.user
-  let user = await User.findOne({ email })
+  let user = await dbConnection.model('User').findOne({ email })
   if (!user) return reply(422) // should this be a 422?
 
   if (user.validPassword(password)) {

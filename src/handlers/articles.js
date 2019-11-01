@@ -1,24 +1,24 @@
 const db = require('../utils/db')
 const reply = require('../utils/responseHelper')
-let cachedDbConnection = null
+let dbConnection = null
 const authorize = require('./authorize')
 
-const articleSlug = async (event, context) => {
-  let { Article, connection } = await db.connect(cachedDbConnection)
-  cachedDbConnection = connection
-
-  const slug = event.path.slug
-  let article = await Article.findOne({ slug }).populate('author')
-  if (!article) return reply(404)
-
-  // here its normally put on req so explain how to know what/how to return the article?
-  return reply()
-}
+// const articleSlug = async (event, context) => {
+//   let { connection } = await db.connect(dbConnection)
+//   dbConnection = connection
+//
+//   const slug = event.path.slug
+//   let article = await dbConnection.model('Article').findOne({ slug }).populate('author')
+//   if (!article) return reply(404)
+//
+//   // here its normally put on req so explain how to know what/how to return the article?
+//   return reply()
+// }
 
 module.exports.bySlug = async (event, context) => {
-  let { Article, User, connection } = await db.connect(cachedDbConnection)
-  cachedDbConnection = connection
+  dbConnection = await db.connect(dbConnection)
 
+  // authOptional helper?
   let userId
   const authorizationToken = event.headers.Authorization
   if (authorizationToken) {
@@ -27,11 +27,11 @@ module.exports.bySlug = async (event, context) => {
 
   let user = false
   if (userId) {
-    user = await User.findById(userId)
+    user = await dbConnection.model('User').findById(userId)
   }
 
   const slug = event.pathParameters.slug
-  let article = await Article.findOne({ slug }).populate('author')
+  let article = await dbConnection.model('Article').findOne({ slug }).populate('author')
   if (!article) return reply(404)
 
   // here its normally put on req so explain how to know what/how to return the article?
@@ -40,8 +40,7 @@ module.exports.bySlug = async (event, context) => {
 
 // todo auth optional routes?
 module.exports.get = async (event, context) => {
-  let { User, Article, connection } = await db.connect(cachedDbConnection)
-  cachedDbConnection = connection
+  dbConnection = await db.connect(dbConnection)
   /**
    * "Auth optional hack"
    * https://www.alexdebrie.com/posts/lambda-custom-authorizers/
@@ -61,8 +60,8 @@ module.exports.get = async (event, context) => {
   if (event.queryStringParameters.tag) query.tagList = { '$in': [event.queryStringParameters.tag] }
 
   let [author, favoriter] = await Promise.all([
-    query.author ? User.findOne({ username: query.author }) : null,
-    query.favorited ? User.findOne({ username: query.favorited }) : null
+    event.queryStringParameters.author ? dbConnection.model('User').findOne({ username: event.queryStringParameters.author }) : null,
+    event.queryStringParameters.favorited ? dbConnection.model('User').findOne({ username: event.queryStringParameters.favorited }) : null
   ])
 
   if (author) {
@@ -76,14 +75,14 @@ module.exports.get = async (event, context) => {
   }
 
   let [articles, articlesCount, user] = await Promise.all([
-    Article.find(query)
+    dbConnection.model('Article').find(query)
       .limit(Number(limit))
       .skip(Number(offset))
       .sort({ createdAt: 'desc' })
       .populate('author')
       .exec(),
-    Article.count(query).exec(),
-    userId ? User.findById(userId) : null,
+    dbConnection.model('Article').count(query).exec(),
+    userId ? dbConnection.model('User').findById(userId) : null,
   ])
 
   return reply(200, {
@@ -94,22 +93,22 @@ module.exports.get = async (event, context) => {
 }
 
 module.exports.feed = async (event, context) => {
-  let { User, Article, connection } = await db.connect(cachedDbConnection)
-  cachedDbConnection = connection
+  dbConnection = await db.connect(dbConnection)
+
   event.queryStringParameters = event.queryStringParameters || {}
   const limit = event.queryStringParameters.limit || 20
   const offset = event.queryStringParameters.offset || 0
 
-  let user = await User.findById(event.requestContext.authorizer.principalId)
+  let user = await dbConnection.model('User').findById(event.requestContext.authorizer.principalId)
   if (!user) return reply(401)
 
   let [articles, articlesCount] = await Promise.all([
-    Article.find({ author: { $in: user.following } })
+    dbConnection.model('Article').find({ author: { $in: user.following } })
       .limit(Number(limit))
       .skip(Number(offset))
       .populate('author')
       .exec(),
-    Article.count({ author: { $in: user.following } })
+    dbConnection.model('Article').count({ author: { $in: user.following } })
   ])
 
   return reply(200, {
@@ -119,13 +118,13 @@ module.exports.feed = async (event, context) => {
 }
 
 module.exports.post = async (event, context) => {
-  let { Article, User, connection } = await db.connect(cachedDbConnection)
-  cachedDbConnection = connection
+  dbConnection = await db.connect(dbConnection)
 
-  let user = await User.findById(event.requestContext.authorizer.principalId)
+  let user = await dbConnection.model('User').findById(event.requestContext.authorizer.principalId)
   if (!user) return reply(401)
 
   event.body = JSON.parse(event.body)
+  const Article = dbConnection.model('Article')
   const article = new Article(event.body.article)
   article.author = user
   await article.save()
@@ -138,12 +137,11 @@ module.exports.post = async (event, context) => {
 // update article
 
 module.exports.put = async (event, context) => {
-  let { User, Article, connection } = await db.connect(cachedDbConnection)
-  cachedDbConnection = connection
+  dbConnection = await db.connect(dbConnection)
 
   const slug = event.pathParameters.slug
-  let user = await User.findById(event.requestContext.authorizer.principalId)
-  let article = await Article.findOne({ slug }).populate('author')
+  let user = await dbConnection.model('User').findById(event.requestContext.authorizer.principalId)
+  let article = await dbConnection.model('Article').findOne({ slug }).populate('author')
   if (!article) return reply(404)
   if (article.author._id.toString() !== user._id.toString()) return reply(403, {message: 'Author did not match User'})
 
@@ -156,40 +154,37 @@ module.exports.put = async (event, context) => {
 
   await article.save()
 
-  console.log(article.toJSONFor(user))
   return reply(200, { article: article.toJSONFor(user) })
 }
 
 module.exports.favorite = async (event, context) => {
-  let { Article, User, connection } = await db.connect(cachedDbConnection)
-  cachedDbConnection = connection
+  dbConnection = await db.connect(dbConnection)
 
   const slug = event.pathParameters.slug
-  let article = await Article.findOne({ slug }).populate('author')
+  let article = await dbConnection.model('Article').findOne({ slug }).populate('author')
   if (!article) return reply(401)
   const articleId = article._id
 
   const userId = event.requestContext.authorizer.principalId
-  let user = await User.findById(userId)
+  let user = await dbConnection.model('User').findById(userId)
   if (!user) return reply(401)
 
   // updating mongoose install
   // updating mongoose uniqueValidator
 
   await user.favorite(articleId)
-  await article.updateFavoriteCount(cachedDbConnection.model('User'))
+  await article.updateFavoriteCount(dbConnection.model('User'))
   return reply(200, { article: article.toJSONFor(user) })
 
 }
 
 module.exports.delete = async (event, context) => {
-  let { Article, User, connection } = await db.connect(cachedDbConnection)
-  cachedDbConnection = connection
+  dbConnection = await db.connect(dbConnection)
 
-  let user = await User.findById(event.requestContext.authorizer.principalId)
+  let user = await dbConnection.model('User').findById(event.requestContext.authorizer.principalId)
   if (!user) return reply(401)
   const slug = event.pathParameters.slug
-  let articleToDelete = await Article.findOne({ slug }).populate('author')
+  let articleToDelete = await dbConnection.model('Article').findOne({ slug }).populate('author')
   if (!articleToDelete) return reply(401)
 
   if (articleToDelete.author._id.toString() === user._id.toString()) {
@@ -204,25 +199,23 @@ module.exports.delete = async (event, context) => {
 
 // Unfavorite an article
 module.exports.unFavorite = async (event, context) => {
-  let { Article, User, connection } = await db.connect(cachedDbConnection)
-  cachedDbConnection = connection
+  dbConnection = await db.connect(dbConnection)
 
   const userId = event.requestContext.authorizer.principalId
-  let user = await User.findById(userId)
+  let user = await dbConnection.model('User').findById(userId)
   if (!user) return reply(401)
   const slug = event.pathParameters.slug
-  let article = await Article.findOne({ slug }).populate('author')
+  let article = await dbConnection.model('Article').findOne({ slug }).populate('author')
   if (!article) return reply(401)
   const articleId = article._id
 
   await user.unfavorite(articleId)
-  await article.updateFavoriteCount(cachedDbConnection.model('User'))
+  await article.updateFavoriteCount(dbConnection.model('User'))
   return reply(200, { article: article.toJSONFor(user) })
 }
 
 module.exports.getComments = async (event, context) => {
-  let { User, Article, connection } = await db.connect(cachedDbConnection)
-  cachedDbConnection = connection
+  dbConnection = await db.connect(dbConnection)
 
   let userId
   const authorizationToken = event.headers.Authorization
@@ -230,10 +223,10 @@ module.exports.getComments = async (event, context) => {
     userId = authorize.handler({ authorizationToken }, context, (error, res) => { return res.principalId })
   }
   const slug = event.pathParameters.slug
-  let article = await Article.findOne({ slug }).populate('author')
+  let article = await dbConnection.model('Article').findOne({ slug }).populate('author')
   if (!article) return reply(401)
 
-  let user = await Promise.resolve(userId ? User.findById(userId) : null)
+  let user = await Promise.resolve(userId ? dbConnection.model('User').findById(userId) : null)
   let commentsPopulatedArticle = await article.populate({
     path: 'comments',
     populate: {
@@ -254,17 +247,17 @@ module.exports.getComments = async (event, context) => {
 }
 
 module.exports.postComment = async (event, context) => {
-  let { User, Article, Comment, connection } = await db.connect(cachedDbConnection)
-  cachedDbConnection = connection
+  dbConnection = await db.connect(dbConnection)
 
   const slug = event.pathParameters.slug
   const userId = event.requestContext.authorizer.principalId
-  let user = await User.findById(userId)
+  let user = await dbConnection.model('User').findById(userId)
   if (!user) return reply(401, {message: 'User not found'})
-  let article = await Article.findOne({ slug }).populate('author')
+  let article = await dbConnection.model('Article').findOne({ slug }).populate('author')
   if (!article) return reply(401, {message: 'Article not found'})
 
   event.body = JSON.parse(event.body)
+  const Comment = dbConnection.model('Comment')
   const comment = new Comment(event.body.comment)
   comment.article = article
   comment.author = user
@@ -276,23 +269,22 @@ module.exports.postComment = async (event, context) => {
 }
 
 module.exports.deleteComment = async (event, context) => {
-  let { User, Article, Comment, connection } = await db.connect(cachedDbConnection)
-  cachedDbConnection = connection
+  dbConnection = await db.connect(dbConnection)
 
   const slug = event.pathParameters.slug
   const userId = event.requestContext.authorizer.principalId
-  let user = await User.findById(userId)
+  let user = await dbConnection.model('User').findById(userId)
   if (!user) return reply(401)
-  let article = await Article.findOne({ slug }).populate('author')
+  let article = await dbConnection.model('Article').findOne({ slug }).populate('author')
   if (!article) return reply(401)
 
-  let comment = await Comment.findById(event.pathParameters.commentId)
+  let comment = await dbConnection.model('Comment').findById(event.pathParameters.commentId)
   if (!comment) return reply(404)
   if (userId !== comment.author.toString()) return reply(403)
 
   await article.comments.remove(comment._id)
   await article.save()
-  await Comment.find({ _id: comment._id }).remove().exec()
+  await dbConnection.model('Comment').find({ _id: comment._id }).remove().exec()
 
   return reply(204)
 }
