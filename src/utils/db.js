@@ -1,11 +1,12 @@
 const mongoose = require('mongoose')
 const uri = process.env.MONGODB_URI
 mongoose.set('debug', true)
+let connection = null
 // show the connections adding up in the mongod terminal thing
 
 // https://github.com/serverless/examples/tree/master/aws-node-mongodb-atlas
 // https://mongoosejs.com/docs/lambda.html
-module.exports.connect = async (connection) => {
+module.exports.connect = async () => {
   // See https://www.mongodb.com/blog/post/serverless-development-with-nodejs-aws-lambda-mongodb-atlas
 
   // Because `conn` is in the global scope, Lambda may retain it between
