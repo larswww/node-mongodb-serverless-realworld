@@ -2,6 +2,7 @@ service: real-world-backend
 
 # serverless logs -f tags , show the mongo econn refused networkerror
 # show not having configured secret?
+# https://serverless.com/framework/docs/providers/aws/guide/functions#configuration
 provider:
   name: aws
   endpointType: REGIONAL
@@ -9,6 +10,10 @@ provider:
   stage: dev # explain stage... figure out stage?
   region: us-east-1
   timeout: 30
+  usagePlan:
+    throttle:
+      burstLimit: 200
+      rateLimit: 100
 
 plugins:
   - serverless-offline
@@ -28,6 +33,8 @@ plugins:
 
 
 # https://itnext.io/how-to-validate-http-requests-before-they-reach-lambda-2fff68bfe93b
+
+# https://www.npmjs.com/package/serverless-aws-documentation
 
 #  serverless-offline: # https://www.npmjs.com/package/serverless-offline
 #    port: 4000
