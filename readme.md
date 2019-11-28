@@ -2,10 +2,10 @@
 
 > ### [Serverless-Framework MongoDB Node] codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld) spec and API.
 
-
 ### [Demo](https://github.com/gothinkster/realworld)&nbsp;&nbsp;&nbsp;&nbsp;[RealWorld](https://github.com/gothinkster/realworld)
 
-This backend is a serverless-refactor of the [node express realworld example app](https://github.com/gothinkster/node-express-realworld-example-app). By comparing the two repo's you can see the difference between a serverless project and a traditional express app. So if you are a developer already familiar with Node and Express, and interested in Serverless, this is a perfect introduction for you.
+This backend is a serverless-refactor of the [node express realworld example app](https://github.com/gothinkster/node-express-realworld-example-app). \
+By comparing the two repo's you can see the difference between a serverless project and a traditional express app. So if you are a developer already familiar with Node and Express, and interested in Serverless, this is a perfect introduction for you.
 
 This project was created to demonstrate taking a traditional node-express-mongodb/mongoose app fully Serverless using aws Lambda and API Gateway. It uses the [Serverless Framework](https://serverless.com/) to make deployment dead-simple and possible without leaving your editor.
 
@@ -29,11 +29,7 @@ Postman collection
 
 Most Serverless-tutorials will use Amazons DynamoDB or a SQL database, however this backend uses MongoDB Atlas. 
 
-
-
-
 It works just like all the other Real World Apps!
-
 
 API Gateway instead of Express.js
 https://www.alexdebrie.com/posts/api-gateway-elements/
@@ -51,10 +47,21 @@ Domain
 
 Logging
 
-
 > Describe the general architecture of your app here
 
 # Getting started
 
 > npm install, npm start, etc.
+- the stuff you'll always need
+    - events
+        - http, ws, scheduling
+    - validation
+    - rate limiting
+    - body parsing
+    - api keys
+    - cache
+...du ska skicka och ta emot JSON...
+
+
+https://serverless.com/blog/structuring-a-real-world-serverless-app/
 

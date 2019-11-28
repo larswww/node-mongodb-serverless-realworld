@@ -26,6 +26,9 @@ plugins:
 #    endpointType: 'regional'
 #    securityPolicy: tls_1_2
 
+
+# https://itnext.io/how-to-validate-http-requests-before-they-reach-lambda-2fff68bfe93b
+
 #  serverless-offline: # https://www.npmjs.com/package/serverless-offline
 #    port: 4000
 
@@ -67,6 +70,9 @@ functions:
           method: post
 #          integration: lambda
           cors: true
+          request:
+            schema:
+              application/json: ${file(src/schemas/postLogin.json)}
 
   putUser:
     handler: src/handlers/users.put
@@ -187,6 +193,9 @@ functions:
 #          integration: lambda
           authorizer: authorize
           cors: true
+          parameters:
+            paths:
+              slug: true
 
   deleteComment:
     handler: src/handlers/articles.deleteComment
@@ -197,6 +206,11 @@ functions:
 #          integration: lambda
           authorizer: authorize
           cors: true
+          parameters:
+            paths:
+              slug: true
+              commentId: true
+
 
 # Profiles
   getProfile:
@@ -208,6 +222,9 @@ functions:
 #          integration: lambda
           authorizer: authorize
           cors: true
+          parameters:
+            paths:
+              profile: true
 
   followProfile:
     handler: src/handlers/profiles.postFollow
@@ -218,6 +235,9 @@ functions:
 #          integration: lambda
           authorizer: authorize
           cors: true
+          parameters:
+            paths:
+              profile: true
 
   unfollowProfile:
     handler: src/handlers/profiles.deleteFollow
@@ -228,6 +248,9 @@ functions:
 #          integration: lambda
           authorizer: authorize
           cors: true
+          parameters:
+            paths:
+              profile: true
 
 # https://serverless.com/blog/cors-api-gateway-survival-guide/
 # https://auth0.com/docs/custom-domains/set-up-cloudfront

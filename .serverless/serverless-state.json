@@ -17,7 +17,7 @@
       "environment": {
         "SLS_DEBUG": "*",
         "TOKEN_SECRET": "productionCat",
-        "MONGODB_URI": "mongodb+srv://lambdaFullAccessUser:realWorldTopPwd@cluster0-zrpie.mongodb.net/test?retryWrites=true&w=majority"
+        "MONGODB_URI": "mongodb://localhost:27017/conduit"
       },
       "compiledCloudFormationTemplate": {
         "AWSTemplateFormatVersion": "2010-09-09",
@@ -240,7 +240,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/real-world-backend/dev/1572612340215-2019-11-01T12:45:40.215Z/real-world-backend.zip"
+                "S3Key": "serverless/real-world-backend/dev/1574930902252-2019-11-28T08:48:22.252Z/real-world-backend.zip"
               },
               "FunctionName": "real-world-backend-dev-authorize",
               "Handler": "src/handlers/authorize.handler",
@@ -257,7 +257,7 @@
                 "Variables": {
                   "SLS_DEBUG": "*",
                   "TOKEN_SECRET": "productionCat",
-                  "MONGODB_URI": "mongodb+srv://lambdaFullAccessUser:realWorldTopPwd@cluster0-zrpie.mongodb.net/test?retryWrites=true&w=majority"
+                  "MONGODB_URI": "mongodb://localhost:27017/conduit"
                 }
               }
             },
@@ -266,14 +266,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "AuthorizeLambdaVersionXqKpvjE78bCEGTz9z4jg15Nrea3e2jRuQZ6YKxLuU": {
+          "AuthorizeLambdaVersion8xhnOMheu9MhJXoAHJucL0YuFEXL9hJ5bWwlv6vU": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AuthorizeLambdaFunction"
               },
-              "CodeSha256": "jzKYfWJGIU20O1lt4TbJ+fe0uLVv6qjhwhOa7H47fio="
+              "CodeSha256": "+2ftmiXbk9+2b4NMqjRo+M83HlMx7pxJfc8r+q+BX2g="
             }
           },
           "TagsLambdaFunction": {
@@ -283,7 +283,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/real-world-backend/dev/1572612340215-2019-11-01T12:45:40.215Z/real-world-backend.zip"
+                "S3Key": "serverless/real-world-backend/dev/1574930902252-2019-11-28T08:48:22.252Z/real-world-backend.zip"
               },
               "FunctionName": "real-world-backend-dev-tags",
               "Handler": "src/handlers/tags.get",
@@ -300,7 +300,7 @@
                 "Variables": {
                   "SLS_DEBUG": "*",
                   "TOKEN_SECRET": "productionCat",
-                  "MONGODB_URI": "mongodb+srv://lambdaFullAccessUser:realWorldTopPwd@cluster0-zrpie.mongodb.net/test?retryWrites=true&w=majority"
+                  "MONGODB_URI": "mongodb://localhost:27017/conduit"
                 }
               }
             },
@@ -309,14 +309,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "TagsLambdaVersion9erbyfHMpF9C9mamZw098qTViTF6EQKof2ePYF7RmxM": {
+          "TagsLambdaVersionV5JMODp9OSrESbbMTjU4IS4KYjRen6Da2vCeBcskhM": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "TagsLambdaFunction"
               },
-              "CodeSha256": "jzKYfWJGIU20O1lt4TbJ+fe0uLVv6qjhwhOa7H47fio="
+              "CodeSha256": "+2ftmiXbk9+2b4NMqjRo+M83HlMx7pxJfc8r+q+BX2g="
             }
           },
           "PostUserLambdaFunction": {
@@ -326,7 +326,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/real-world-backend/dev/1572612340215-2019-11-01T12:45:40.215Z/real-world-backend.zip"
+                "S3Key": "serverless/real-world-backend/dev/1574930902252-2019-11-28T08:48:22.252Z/real-world-backend.zip"
               },
               "FunctionName": "real-world-backend-dev-postUser",
               "Handler": "src/handlers/users.postUser",
@@ -343,7 +343,7 @@
                 "Variables": {
                   "SLS_DEBUG": "*",
                   "TOKEN_SECRET": "productionCat",
-                  "MONGODB_URI": "mongodb+srv://lambdaFullAccessUser:realWorldTopPwd@cluster0-zrpie.mongodb.net/test?retryWrites=true&w=majority"
+                  "MONGODB_URI": "mongodb://localhost:27017/conduit"
                 }
               }
             },
@@ -352,14 +352,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "PostUserLambdaVersiondnnCemWiLgl0W0QMFRHVGu0kRSx7LazXnxlOi6c13T4": {
+          "PostUserLambdaVersionM40aZRgPWJm5fWhloOPqUaD8nwsQGVZDGsEi50F3A": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "PostUserLambdaFunction"
               },
-              "CodeSha256": "jzKYfWJGIU20O1lt4TbJ+fe0uLVv6qjhwhOa7H47fio="
+              "CodeSha256": "+2ftmiXbk9+2b4NMqjRo+M83HlMx7pxJfc8r+q+BX2g="
             }
           },
           "PostLoginLambdaFunction": {
@@ -369,7 +369,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/real-world-backend/dev/1572612340215-2019-11-01T12:45:40.215Z/real-world-backend.zip"
+                "S3Key": "serverless/real-world-backend/dev/1574930902252-2019-11-28T08:48:22.252Z/real-world-backend.zip"
               },
               "FunctionName": "real-world-backend-dev-postLogin",
               "Handler": "src/handlers/users.postLogin",
@@ -386,7 +386,7 @@
                 "Variables": {
                   "SLS_DEBUG": "*",
                   "TOKEN_SECRET": "productionCat",
-                  "MONGODB_URI": "mongodb+srv://lambdaFullAccessUser:realWorldTopPwd@cluster0-zrpie.mongodb.net/test?retryWrites=true&w=majority"
+                  "MONGODB_URI": "mongodb://localhost:27017/conduit"
                 }
               }
             },
@@ -395,14 +395,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "PostLoginLambdaVersion9JqTGngQ9zVORnunRZXw9PobKFFlgcWzNoyshEzidI": {
+          "PostLoginLambdaVersiondcDWmkUO4ChbA5fIIKtdfwrcrAqXzUW6pvdeRnmwM": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "PostLoginLambdaFunction"
               },
-              "CodeSha256": "jzKYfWJGIU20O1lt4TbJ+fe0uLVv6qjhwhOa7H47fio="
+              "CodeSha256": "+2ftmiXbk9+2b4NMqjRo+M83HlMx7pxJfc8r+q+BX2g="
             }
           },
           "PutUserLambdaFunction": {
@@ -412,7 +412,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/real-world-backend/dev/1572612340215-2019-11-01T12:45:40.215Z/real-world-backend.zip"
+                "S3Key": "serverless/real-world-backend/dev/1574930902252-2019-11-28T08:48:22.252Z/real-world-backend.zip"
               },
               "FunctionName": "real-world-backend-dev-putUser",
               "Handler": "src/handlers/users.put",
@@ -429,7 +429,7 @@
                 "Variables": {
                   "SLS_DEBUG": "*",
                   "TOKEN_SECRET": "productionCat",
-                  "MONGODB_URI": "mongodb+srv://lambdaFullAccessUser:realWorldTopPwd@cluster0-zrpie.mongodb.net/test?retryWrites=true&w=majority"
+                  "MONGODB_URI": "mongodb://localhost:27017/conduit"
                 }
               }
             },
@@ -438,14 +438,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "PutUserLambdaVersiontvGitDbEaxKHdqU3uoCntevWpvMCaGG6u1b89TiP6qo": {
+          "PutUserLambdaVersionA4N3hw5Hzdh8J28G8LCFFMZ6siYei0eHVcoZaUUI": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "PutUserLambdaFunction"
               },
-              "CodeSha256": "jzKYfWJGIU20O1lt4TbJ+fe0uLVv6qjhwhOa7H47fio="
+              "CodeSha256": "+2ftmiXbk9+2b4NMqjRo+M83HlMx7pxJfc8r+q+BX2g="
             }
           },
           "GetUserLambdaFunction": {
@@ -455,7 +455,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/real-world-backend/dev/1572612340215-2019-11-01T12:45:40.215Z/real-world-backend.zip"
+                "S3Key": "serverless/real-world-backend/dev/1574930902252-2019-11-28T08:48:22.252Z/real-world-backend.zip"
               },
               "FunctionName": "real-world-backend-dev-getUser",
               "Handler": "src/handlers/users.get",
@@ -472,7 +472,7 @@
                 "Variables": {
                   "SLS_DEBUG": "*",
                   "TOKEN_SECRET": "productionCat",
-                  "MONGODB_URI": "mongodb+srv://lambdaFullAccessUser:realWorldTopPwd@cluster0-zrpie.mongodb.net/test?retryWrites=true&w=majority"
+                  "MONGODB_URI": "mongodb://localhost:27017/conduit"
                 }
               }
             },
@@ -481,14 +481,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "GetUserLambdaVersionDjeBZHn8uREbjYC87dlXULRCr4U0dTNCwDQtBBz1ps": {
+          "GetUserLambdaVersionNSWQRZuyMuRakPTcFUQGd2OD0lvircdIhLvcJXb74fA": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetUserLambdaFunction"
               },
-              "CodeSha256": "jzKYfWJGIU20O1lt4TbJ+fe0uLVv6qjhwhOa7H47fio="
+              "CodeSha256": "+2ftmiXbk9+2b4NMqjRo+M83HlMx7pxJfc8r+q+BX2g="
             }
           },
           "ArticleBySlugLambdaFunction": {
@@ -498,7 +498,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/real-world-backend/dev/1572612340215-2019-11-01T12:45:40.215Z/real-world-backend.zip"
+                "S3Key": "serverless/real-world-backend/dev/1574930902252-2019-11-28T08:48:22.252Z/real-world-backend.zip"
               },
               "FunctionName": "real-world-backend-dev-articleBySlug",
               "Handler": "src/handlers/articles.bySlug",
@@ -515,7 +515,7 @@
                 "Variables": {
                   "SLS_DEBUG": "*",
                   "TOKEN_SECRET": "productionCat",
-                  "MONGODB_URI": "mongodb+srv://lambdaFullAccessUser:realWorldTopPwd@cluster0-zrpie.mongodb.net/test?retryWrites=true&w=majority"
+                  "MONGODB_URI": "mongodb://localhost:27017/conduit"
                 }
               }
             },
@@ -524,14 +524,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "ArticleBySlugLambdaVersiony1QKdCDVSM3tjLyOFvU9m2gJsEw1qmMtUAB6tYJU": {
+          "ArticleBySlugLambdaVersionMdblssOoUVN6Qof61kfGiTwyMj147RDivdDm7QVxdE": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ArticleBySlugLambdaFunction"
               },
-              "CodeSha256": "jzKYfWJGIU20O1lt4TbJ+fe0uLVv6qjhwhOa7H47fio="
+              "CodeSha256": "+2ftmiXbk9+2b4NMqjRo+M83HlMx7pxJfc8r+q+BX2g="
             }
           },
           "GetArticlesLambdaFunction": {
@@ -541,7 +541,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/real-world-backend/dev/1572612340215-2019-11-01T12:45:40.215Z/real-world-backend.zip"
+                "S3Key": "serverless/real-world-backend/dev/1574930902252-2019-11-28T08:48:22.252Z/real-world-backend.zip"
               },
               "FunctionName": "real-world-backend-dev-getArticles",
               "Handler": "src/handlers/articles.get",
@@ -558,7 +558,7 @@
                 "Variables": {
                   "SLS_DEBUG": "*",
                   "TOKEN_SECRET": "productionCat",
-                  "MONGODB_URI": "mongodb+srv://lambdaFullAccessUser:realWorldTopPwd@cluster0-zrpie.mongodb.net/test?retryWrites=true&w=majority"
+                  "MONGODB_URI": "mongodb://localhost:27017/conduit"
                 }
               }
             },
@@ -567,14 +567,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "GetArticlesLambdaVersionH2chljfnxunp2rt04LK6iKAQMHYTirPEswwHzQnyAu4": {
+          "GetArticlesLambdaVersionYZqaMcKn0rO088IC9BgFIY5X1IxYL0PikJHYcNpJx4": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetArticlesLambdaFunction"
               },
-              "CodeSha256": "jzKYfWJGIU20O1lt4TbJ+fe0uLVv6qjhwhOa7H47fio="
+              "CodeSha256": "+2ftmiXbk9+2b4NMqjRo+M83HlMx7pxJfc8r+q+BX2g="
             }
           },
           "PostArticleLambdaFunction": {
@@ -584,7 +584,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/real-world-backend/dev/1572612340215-2019-11-01T12:45:40.215Z/real-world-backend.zip"
+                "S3Key": "serverless/real-world-backend/dev/1574930902252-2019-11-28T08:48:22.252Z/real-world-backend.zip"
               },
               "FunctionName": "real-world-backend-dev-postArticle",
               "Handler": "src/handlers/articles.post",
@@ -601,7 +601,7 @@
                 "Variables": {
                   "SLS_DEBUG": "*",
                   "TOKEN_SECRET": "productionCat",
-                  "MONGODB_URI": "mongodb+srv://lambdaFullAccessUser:realWorldTopPwd@cluster0-zrpie.mongodb.net/test?retryWrites=true&w=majority"
+                  "MONGODB_URI": "mongodb://localhost:27017/conduit"
                 }
               }
             },
@@ -610,14 +610,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "PostArticleLambdaVersion6HUQsi7lCJCuesRqGsGN0fGVJpq4e2X2BPaVkqTTy0": {
+          "PostArticleLambdaVersionMa5hvHymQgPodO0H9xuP5kVnlWihiSAudUIgo8wUk": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "PostArticleLambdaFunction"
               },
-              "CodeSha256": "jzKYfWJGIU20O1lt4TbJ+fe0uLVv6qjhwhOa7H47fio="
+              "CodeSha256": "+2ftmiXbk9+2b4NMqjRo+M83HlMx7pxJfc8r+q+BX2g="
             }
           },
           "FavoriteArticleLambdaFunction": {
@@ -627,7 +627,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/real-world-backend/dev/1572612340215-2019-11-01T12:45:40.215Z/real-world-backend.zip"
+                "S3Key": "serverless/real-world-backend/dev/1574930902252-2019-11-28T08:48:22.252Z/real-world-backend.zip"
               },
               "FunctionName": "real-world-backend-dev-favoriteArticle",
               "Handler": "src/handlers/articles.favorite",
@@ -644,7 +644,7 @@
                 "Variables": {
                   "SLS_DEBUG": "*",
                   "TOKEN_SECRET": "productionCat",
-                  "MONGODB_URI": "mongodb+srv://lambdaFullAccessUser:realWorldTopPwd@cluster0-zrpie.mongodb.net/test?retryWrites=true&w=majority"
+                  "MONGODB_URI": "mongodb://localhost:27017/conduit"
                 }
               }
             },
@@ -653,14 +653,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "FavoriteArticleLambdaVersionzdnJBiv5w51g4PBQYf3McsR7BxwGkUZWeBy19kEXCQ": {
+          "FavoriteArticleLambdaVersionE5jf5zLRk8mYmzDCpXJJ7rm1RLOVhEk5PjlJzwt1V4": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "FavoriteArticleLambdaFunction"
               },
-              "CodeSha256": "jzKYfWJGIU20O1lt4TbJ+fe0uLVv6qjhwhOa7H47fio="
+              "CodeSha256": "+2ftmiXbk9+2b4NMqjRo+M83HlMx7pxJfc8r+q+BX2g="
             }
           },
           "UnfavoriteArticleLambdaFunction": {
@@ -670,7 +670,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/real-world-backend/dev/1572612340215-2019-11-01T12:45:40.215Z/real-world-backend.zip"
+                "S3Key": "serverless/real-world-backend/dev/1574930902252-2019-11-28T08:48:22.252Z/real-world-backend.zip"
               },
               "FunctionName": "real-world-backend-dev-unfavoriteArticle",
               "Handler": "src/handlers/articles.unFavorite",
@@ -687,7 +687,7 @@
                 "Variables": {
                   "SLS_DEBUG": "*",
                   "TOKEN_SECRET": "productionCat",
-                  "MONGODB_URI": "mongodb+srv://lambdaFullAccessUser:realWorldTopPwd@cluster0-zrpie.mongodb.net/test?retryWrites=true&w=majority"
+                  "MONGODB_URI": "mongodb://localhost:27017/conduit"
                 }
               }
             },
@@ -696,14 +696,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "UnfavoriteArticleLambdaVersionWctXimdmUbja4tvk71Q4WaBdOBjj7GmLvFywMPoQ": {
+          "UnfavoriteArticleLambdaVersiono44QrkzPak5DWdi81SAlUFcYZFp55D2ZoCMwiDOw": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "UnfavoriteArticleLambdaFunction"
               },
-              "CodeSha256": "jzKYfWJGIU20O1lt4TbJ+fe0uLVv6qjhwhOa7H47fio="
+              "CodeSha256": "+2ftmiXbk9+2b4NMqjRo+M83HlMx7pxJfc8r+q+BX2g="
             }
           },
           "DeleteArticleLambdaFunction": {
@@ -713,7 +713,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/real-world-backend/dev/1572612340215-2019-11-01T12:45:40.215Z/real-world-backend.zip"
+                "S3Key": "serverless/real-world-backend/dev/1574930902252-2019-11-28T08:48:22.252Z/real-world-backend.zip"
               },
               "FunctionName": "real-world-backend-dev-deleteArticle",
               "Handler": "src/handlers/articles.delete",
@@ -730,7 +730,7 @@
                 "Variables": {
                   "SLS_DEBUG": "*",
                   "TOKEN_SECRET": "productionCat",
-                  "MONGODB_URI": "mongodb+srv://lambdaFullAccessUser:realWorldTopPwd@cluster0-zrpie.mongodb.net/test?retryWrites=true&w=majority"
+                  "MONGODB_URI": "mongodb://localhost:27017/conduit"
                 }
               }
             },
@@ -739,14 +739,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "DeleteArticleLambdaVersiondtgfiJMPwKs8bK3xuQemEeY6mcGnXKcqRD4M9eJnOo": {
+          "DeleteArticleLambdaVersion5Qaz8wGxbegoT6wdwnj5VAwpQ44HDgQ4PAALvAls": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "DeleteArticleLambdaFunction"
               },
-              "CodeSha256": "jzKYfWJGIU20O1lt4TbJ+fe0uLVv6qjhwhOa7H47fio="
+              "CodeSha256": "+2ftmiXbk9+2b4NMqjRo+M83HlMx7pxJfc8r+q+BX2g="
             }
           },
           "FeedLambdaFunction": {
@@ -756,7 +756,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/real-world-backend/dev/1572612340215-2019-11-01T12:45:40.215Z/real-world-backend.zip"
+                "S3Key": "serverless/real-world-backend/dev/1574930902252-2019-11-28T08:48:22.252Z/real-world-backend.zip"
               },
               "FunctionName": "real-world-backend-dev-feed",
               "Handler": "src/handlers/articles.feed",
@@ -773,7 +773,7 @@
                 "Variables": {
                   "SLS_DEBUG": "*",
                   "TOKEN_SECRET": "productionCat",
-                  "MONGODB_URI": "mongodb+srv://lambdaFullAccessUser:realWorldTopPwd@cluster0-zrpie.mongodb.net/test?retryWrites=true&w=majority"
+                  "MONGODB_URI": "mongodb://localhost:27017/conduit"
                 }
               }
             },
@@ -782,14 +782,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "FeedLambdaVersionDXBTzNP3DwqZazrdk8wKrBEWWdwI0ydbm3L1lbtiIw": {
+          "FeedLambdaVersion7FEiy9641vhIFUD2AvyxgMUSKay3n5dUBp8DC6qwQ": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "FeedLambdaFunction"
               },
-              "CodeSha256": "jzKYfWJGIU20O1lt4TbJ+fe0uLVv6qjhwhOa7H47fio="
+              "CodeSha256": "+2ftmiXbk9+2b4NMqjRo+M83HlMx7pxJfc8r+q+BX2g="
             }
           },
           "PutArticleLambdaFunction": {
@@ -799,7 +799,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/real-world-backend/dev/1572612340215-2019-11-01T12:45:40.215Z/real-world-backend.zip"
+                "S3Key": "serverless/real-world-backend/dev/1574930902252-2019-11-28T08:48:22.252Z/real-world-backend.zip"
               },
               "FunctionName": "real-world-backend-dev-putArticle",
               "Handler": "src/handlers/articles.put",
@@ -816,7 +816,7 @@
                 "Variables": {
                   "SLS_DEBUG": "*",
                   "TOKEN_SECRET": "productionCat",
-                  "MONGODB_URI": "mongodb+srv://lambdaFullAccessUser:realWorldTopPwd@cluster0-zrpie.mongodb.net/test?retryWrites=true&w=majority"
+                  "MONGODB_URI": "mongodb://localhost:27017/conduit"
                 }
               }
             },
@@ -825,14 +825,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "PutArticleLambdaVersionrrCu4VZVUV5swFcCVsEB6rZTjUCCpbOs9ZG2AVQsvY": {
+          "PutArticleLambdaVersionPurxletvF0pZ9GM6HuXPB2Wzud2w99uK0d21rpJ9BA": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "PutArticleLambdaFunction"
               },
-              "CodeSha256": "jzKYfWJGIU20O1lt4TbJ+fe0uLVv6qjhwhOa7H47fio="
+              "CodeSha256": "+2ftmiXbk9+2b4NMqjRo+M83HlMx7pxJfc8r+q+BX2g="
             }
           },
           "GetCommentsLambdaFunction": {
@@ -842,7 +842,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/real-world-backend/dev/1572612340215-2019-11-01T12:45:40.215Z/real-world-backend.zip"
+                "S3Key": "serverless/real-world-backend/dev/1574930902252-2019-11-28T08:48:22.252Z/real-world-backend.zip"
               },
               "FunctionName": "real-world-backend-dev-getComments",
               "Handler": "src/handlers/articles.getComments",
@@ -859,7 +859,7 @@
                 "Variables": {
                   "SLS_DEBUG": "*",
                   "TOKEN_SECRET": "productionCat",
-                  "MONGODB_URI": "mongodb+srv://lambdaFullAccessUser:realWorldTopPwd@cluster0-zrpie.mongodb.net/test?retryWrites=true&w=majority"
+                  "MONGODB_URI": "mongodb://localhost:27017/conduit"
                 }
               }
             },
@@ -868,14 +868,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "GetCommentsLambdaVersiond42W4E6yzdOoSEmLvUGFccACT4ubet746ceMqJI4": {
+          "GetCommentsLambdaVersionG545Z4RZfyXu3vYOFV7y69bzDtUfotERiOZDAKvQCk": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetCommentsLambdaFunction"
               },
-              "CodeSha256": "jzKYfWJGIU20O1lt4TbJ+fe0uLVv6qjhwhOa7H47fio="
+              "CodeSha256": "+2ftmiXbk9+2b4NMqjRo+M83HlMx7pxJfc8r+q+BX2g="
             }
           },
           "PostCommentLambdaFunction": {
@@ -885,7 +885,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/real-world-backend/dev/1572612340215-2019-11-01T12:45:40.215Z/real-world-backend.zip"
+                "S3Key": "serverless/real-world-backend/dev/1574930902252-2019-11-28T08:48:22.252Z/real-world-backend.zip"
               },
               "FunctionName": "real-world-backend-dev-postComment",
               "Handler": "src/handlers/articles.postComment",
@@ -902,7 +902,7 @@
                 "Variables": {
                   "SLS_DEBUG": "*",
                   "TOKEN_SECRET": "productionCat",
-                  "MONGODB_URI": "mongodb+srv://lambdaFullAccessUser:realWorldTopPwd@cluster0-zrpie.mongodb.net/test?retryWrites=true&w=majority"
+                  "MONGODB_URI": "mongodb://localhost:27017/conduit"
                 }
               }
             },
@@ -911,14 +911,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "PostCommentLambdaVersionpAXR9ZyjltiqKVYvmyoL7SIirlbczz5N3zESqvYlXiM": {
+          "PostCommentLambdaVersionE69BiE79FCje5SO4TQvrmZu3fcbXE5w7pJuQy04cX8": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "PostCommentLambdaFunction"
               },
-              "CodeSha256": "jzKYfWJGIU20O1lt4TbJ+fe0uLVv6qjhwhOa7H47fio="
+              "CodeSha256": "+2ftmiXbk9+2b4NMqjRo+M83HlMx7pxJfc8r+q+BX2g="
             }
           },
           "DeleteCommentLambdaFunction": {
@@ -928,7 +928,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/real-world-backend/dev/1572612340215-2019-11-01T12:45:40.215Z/real-world-backend.zip"
+                "S3Key": "serverless/real-world-backend/dev/1574930902252-2019-11-28T08:48:22.252Z/real-world-backend.zip"
               },
               "FunctionName": "real-world-backend-dev-deleteComment",
               "Handler": "src/handlers/articles.deleteComment",
@@ -945,7 +945,7 @@
                 "Variables": {
                   "SLS_DEBUG": "*",
                   "TOKEN_SECRET": "productionCat",
-                  "MONGODB_URI": "mongodb+srv://lambdaFullAccessUser:realWorldTopPwd@cluster0-zrpie.mongodb.net/test?retryWrites=true&w=majority"
+                  "MONGODB_URI": "mongodb://localhost:27017/conduit"
                 }
               }
             },
@@ -954,14 +954,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "DeleteCommentLambdaVersionQ6EAPvskDnrXUus7kFKrg9Y9GncEuXHiCXKf7nU": {
+          "DeleteCommentLambdaVersion1p9iHQnTFjCfuhuMWjG9Ld0BstpJa9cFs5gKoAEicVM": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "DeleteCommentLambdaFunction"
               },
-              "CodeSha256": "jzKYfWJGIU20O1lt4TbJ+fe0uLVv6qjhwhOa7H47fio="
+              "CodeSha256": "+2ftmiXbk9+2b4NMqjRo+M83HlMx7pxJfc8r+q+BX2g="
             }
           },
           "GetProfileLambdaFunction": {
@@ -971,7 +971,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/real-world-backend/dev/1572612340215-2019-11-01T12:45:40.215Z/real-world-backend.zip"
+                "S3Key": "serverless/real-world-backend/dev/1574930902252-2019-11-28T08:48:22.252Z/real-world-backend.zip"
               },
               "FunctionName": "real-world-backend-dev-getProfile",
               "Handler": "src/handlers/profiles.get",
@@ -988,7 +988,7 @@
                 "Variables": {
                   "SLS_DEBUG": "*",
                   "TOKEN_SECRET": "productionCat",
-                  "MONGODB_URI": "mongodb+srv://lambdaFullAccessUser:realWorldTopPwd@cluster0-zrpie.mongodb.net/test?retryWrites=true&w=majority"
+                  "MONGODB_URI": "mongodb://localhost:27017/conduit"
                 }
               }
             },
@@ -997,14 +997,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "GetProfileLambdaVersionphGqnVri7y008lorCoAqhnbIE7m8ydclw1FChezTo": {
+          "GetProfileLambdaVersionBhLP7Xy83ErwtRpIZgnjc9RcOgVrrksdcsrsXHw3M0": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetProfileLambdaFunction"
               },
-              "CodeSha256": "jzKYfWJGIU20O1lt4TbJ+fe0uLVv6qjhwhOa7H47fio="
+              "CodeSha256": "+2ftmiXbk9+2b4NMqjRo+M83HlMx7pxJfc8r+q+BX2g="
             }
           },
           "FollowProfileLambdaFunction": {
@@ -1014,7 +1014,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/real-world-backend/dev/1572612340215-2019-11-01T12:45:40.215Z/real-world-backend.zip"
+                "S3Key": "serverless/real-world-backend/dev/1574930902252-2019-11-28T08:48:22.252Z/real-world-backend.zip"
               },
               "FunctionName": "real-world-backend-dev-followProfile",
               "Handler": "src/handlers/profiles.postFollow",
@@ -1031,7 +1031,7 @@
                 "Variables": {
                   "SLS_DEBUG": "*",
                   "TOKEN_SECRET": "productionCat",
-                  "MONGODB_URI": "mongodb+srv://lambdaFullAccessUser:realWorldTopPwd@cluster0-zrpie.mongodb.net/test?retryWrites=true&w=majority"
+                  "MONGODB_URI": "mongodb://localhost:27017/conduit"
                 }
               }
             },
@@ -1040,14 +1040,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "FollowProfileLambdaVersionRWqrwVFjKef4nnXUaIEj2hU2QNvYjtzBZjiLrccAs": {
+          "FollowProfileLambdaVersionhyvR5BNJB0EGdejpmzQ5ekXDT3jYEdenwNvSWYfanxM": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "FollowProfileLambdaFunction"
               },
-              "CodeSha256": "jzKYfWJGIU20O1lt4TbJ+fe0uLVv6qjhwhOa7H47fio="
+              "CodeSha256": "+2ftmiXbk9+2b4NMqjRo+M83HlMx7pxJfc8r+q+BX2g="
             }
           },
           "UnfollowProfileLambdaFunction": {
@@ -1057,7 +1057,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/real-world-backend/dev/1572612340215-2019-11-01T12:45:40.215Z/real-world-backend.zip"
+                "S3Key": "serverless/real-world-backend/dev/1574930902252-2019-11-28T08:48:22.252Z/real-world-backend.zip"
               },
               "FunctionName": "real-world-backend-dev-unfollowProfile",
               "Handler": "src/handlers/profiles.deleteFollow",
@@ -1074,7 +1074,7 @@
                 "Variables": {
                   "SLS_DEBUG": "*",
                   "TOKEN_SECRET": "productionCat",
-                  "MONGODB_URI": "mongodb+srv://lambdaFullAccessUser:realWorldTopPwd@cluster0-zrpie.mongodb.net/test?retryWrites=true&w=majority"
+                  "MONGODB_URI": "mongodb://localhost:27017/conduit"
                 }
               }
             },
@@ -1083,14 +1083,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "UnfollowProfileLambdaVersionoxCGvYEW12HwKYPP2noeoMLHbJWXLH1Q6BLVGchyOU": {
+          "UnfollowProfileLambdaVersionxaPMzEtgqaDdwFgks5A2RQBEtkV2hXr7d9fhzYTxfHg": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "UnfollowProfileLambdaFunction"
               },
-              "CodeSha256": "jzKYfWJGIU20O1lt4TbJ+fe0uLVv6qjhwhOa7H47fio="
+              "CodeSha256": "+2ftmiXbk9+2b4NMqjRo+M83HlMx7pxJfc8r+q+BX2g="
             }
           },
           "ApiGatewayRestApi": {
@@ -1925,6 +1925,55 @@
               "MethodResponses": []
             }
           },
+          "ApiGatewayMethodUsersLoginPostApplicationJsonModel": {
+            "Type": "AWS::ApiGateway::Model",
+            "Properties": {
+              "RestApiId": {
+                "Ref": "ApiGatewayRestApi"
+              },
+              "ContentType": "application/json",
+              "Schema": {
+                "definitions": {},
+                "title": "Schema for validating user login input",
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "type": "object",
+                "required": [
+                  "user"
+                ],
+                "properties": {
+                  "user": {
+                    "type": "object",
+                    "required": [
+                      "username",
+                      "password"
+                    ],
+                    "properties": {
+                      "password": {
+                        "type": "string",
+                        "minLength": 4,
+                        "maxLength": 100
+                      },
+                      "username": {
+                        "type": "string",
+                        "minLength": 4,
+                        "maxLength": 100
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ApiGatewayMethodUsersLoginPostValidator": {
+            "Type": "AWS::ApiGateway::RequestValidator",
+            "Properties": {
+              "RestApiId": {
+                "Ref": "ApiGatewayRestApi"
+              },
+              "ValidateRequestBody": true,
+              "ValidateRequestParameters": true
+            }
+          },
           "ApiGatewayMethodUsersLoginPost": {
             "Type": "AWS::ApiGateway::Method",
             "Properties": {
@@ -1965,7 +2014,15 @@
                   ]
                 }
               },
-              "MethodResponses": []
+              "MethodResponses": [],
+              "RequestValidatorId": {
+                "Ref": "ApiGatewayMethodUsersLoginPostValidator"
+              },
+              "RequestModels": {
+                "application/json": {
+                  "Ref": "ApiGatewayMethodUsersLoginPostApplicationJsonModel"
+                }
+              }
             }
           },
           "ApiGatewayMethodUserPut": {
@@ -2742,7 +2799,7 @@
               "Type": "TOKEN"
             }
           },
-          "ApiGatewayDeployment1572612331996": {
+          "ApiGatewayDeployment1574930891224": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -3523,121 +3580,121 @@
           "AuthorizeLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AuthorizeLambdaVersionXqKpvjE78bCEGTz9z4jg15Nrea3e2jRuQZ6YKxLuU"
+              "Ref": "AuthorizeLambdaVersion8xhnOMheu9MhJXoAHJucL0YuFEXL9hJ5bWwlv6vU"
             }
           },
           "TagsLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "TagsLambdaVersion9erbyfHMpF9C9mamZw098qTViTF6EQKof2ePYF7RmxM"
+              "Ref": "TagsLambdaVersionV5JMODp9OSrESbbMTjU4IS4KYjRen6Da2vCeBcskhM"
             }
           },
           "PostUserLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "PostUserLambdaVersiondnnCemWiLgl0W0QMFRHVGu0kRSx7LazXnxlOi6c13T4"
+              "Ref": "PostUserLambdaVersionM40aZRgPWJm5fWhloOPqUaD8nwsQGVZDGsEi50F3A"
             }
           },
           "PostLoginLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "PostLoginLambdaVersion9JqTGngQ9zVORnunRZXw9PobKFFlgcWzNoyshEzidI"
+              "Ref": "PostLoginLambdaVersiondcDWmkUO4ChbA5fIIKtdfwrcrAqXzUW6pvdeRnmwM"
             }
           },
           "PutUserLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "PutUserLambdaVersiontvGitDbEaxKHdqU3uoCntevWpvMCaGG6u1b89TiP6qo"
+              "Ref": "PutUserLambdaVersionA4N3hw5Hzdh8J28G8LCFFMZ6siYei0eHVcoZaUUI"
             }
           },
           "GetUserLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetUserLambdaVersionDjeBZHn8uREbjYC87dlXULRCr4U0dTNCwDQtBBz1ps"
+              "Ref": "GetUserLambdaVersionNSWQRZuyMuRakPTcFUQGd2OD0lvircdIhLvcJXb74fA"
             }
           },
           "ArticleBySlugLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ArticleBySlugLambdaVersiony1QKdCDVSM3tjLyOFvU9m2gJsEw1qmMtUAB6tYJU"
+              "Ref": "ArticleBySlugLambdaVersionMdblssOoUVN6Qof61kfGiTwyMj147RDivdDm7QVxdE"
             }
           },
           "GetArticlesLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetArticlesLambdaVersionH2chljfnxunp2rt04LK6iKAQMHYTirPEswwHzQnyAu4"
+              "Ref": "GetArticlesLambdaVersionYZqaMcKn0rO088IC9BgFIY5X1IxYL0PikJHYcNpJx4"
             }
           },
           "PostArticleLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "PostArticleLambdaVersion6HUQsi7lCJCuesRqGsGN0fGVJpq4e2X2BPaVkqTTy0"
+              "Ref": "PostArticleLambdaVersionMa5hvHymQgPodO0H9xuP5kVnlWihiSAudUIgo8wUk"
             }
           },
           "FavoriteArticleLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "FavoriteArticleLambdaVersionzdnJBiv5w51g4PBQYf3McsR7BxwGkUZWeBy19kEXCQ"
+              "Ref": "FavoriteArticleLambdaVersionE5jf5zLRk8mYmzDCpXJJ7rm1RLOVhEk5PjlJzwt1V4"
             }
           },
           "UnfavoriteArticleLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "UnfavoriteArticleLambdaVersionWctXimdmUbja4tvk71Q4WaBdOBjj7GmLvFywMPoQ"
+              "Ref": "UnfavoriteArticleLambdaVersiono44QrkzPak5DWdi81SAlUFcYZFp55D2ZoCMwiDOw"
             }
           },
           "DeleteArticleLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "DeleteArticleLambdaVersiondtgfiJMPwKs8bK3xuQemEeY6mcGnXKcqRD4M9eJnOo"
+              "Ref": "DeleteArticleLambdaVersion5Qaz8wGxbegoT6wdwnj5VAwpQ44HDgQ4PAALvAls"
             }
           },
           "FeedLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "FeedLambdaVersionDXBTzNP3DwqZazrdk8wKrBEWWdwI0ydbm3L1lbtiIw"
+              "Ref": "FeedLambdaVersion7FEiy9641vhIFUD2AvyxgMUSKay3n5dUBp8DC6qwQ"
             }
           },
           "PutArticleLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "PutArticleLambdaVersionrrCu4VZVUV5swFcCVsEB6rZTjUCCpbOs9ZG2AVQsvY"
+              "Ref": "PutArticleLambdaVersionPurxletvF0pZ9GM6HuXPB2Wzud2w99uK0d21rpJ9BA"
             }
           },
           "GetCommentsLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetCommentsLambdaVersiond42W4E6yzdOoSEmLvUGFccACT4ubet746ceMqJI4"
+              "Ref": "GetCommentsLambdaVersionG545Z4RZfyXu3vYOFV7y69bzDtUfotERiOZDAKvQCk"
             }
           },
           "PostCommentLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "PostCommentLambdaVersionpAXR9ZyjltiqKVYvmyoL7SIirlbczz5N3zESqvYlXiM"
+              "Ref": "PostCommentLambdaVersionE69BiE79FCje5SO4TQvrmZu3fcbXE5w7pJuQy04cX8"
             }
           },
           "DeleteCommentLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "DeleteCommentLambdaVersionQ6EAPvskDnrXUus7kFKrg9Y9GncEuXHiCXKf7nU"
+              "Ref": "DeleteCommentLambdaVersion1p9iHQnTFjCfuhuMWjG9Ld0BstpJa9cFs5gKoAEicVM"
             }
           },
           "GetProfileLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetProfileLambdaVersionphGqnVri7y008lorCoAqhnbIE7m8ydclw1FChezTo"
+              "Ref": "GetProfileLambdaVersionBhLP7Xy83ErwtRpIZgnjc9RcOgVrrksdcsrsXHw3M0"
             }
           },
           "FollowProfileLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "FollowProfileLambdaVersionRWqrwVFjKef4nnXUaIEj2hU2QNvYjtzBZjiLrccAs"
+              "Ref": "FollowProfileLambdaVersionhyvR5BNJB0EGdejpmzQ5ekXDT3jYEdenwNvSWYfanxM"
             }
           },
           "UnfollowProfileLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "UnfollowProfileLambdaVersionoxCGvYEW12HwKYPP2noeoMLHbJWXLH1Q6BLVGchyOU"
+              "Ref": "UnfollowProfileLambdaVersionxaPMzEtgqaDdwFgks5A2RQBEtkV2hXr7d9fhzYTxfHg"
             }
           },
           "ServiceEndpoint": {
@@ -3811,6 +3868,40 @@
                   "X-Amz-User-Agent"
                 ],
                 "allowCredentials": false
+              },
+              "request": {
+                "schema": {
+                  "application/json": {
+                    "definitions": {},
+                    "title": "Schema for validating user login input",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "required": [
+                      "user"
+                    ],
+                    "properties": {
+                      "user": {
+                        "type": "object",
+                        "required": [
+                          "username",
+                          "password"
+                        ],
+                        "properties": {
+                          "password": {
+                            "type": "string",
+                            "minLength": 4,
+                            "maxLength": 100
+                          },
+                          "username": {
+                            "type": "string",
+                            "minLength": 4,
+                            "maxLength": 100
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
               },
               "integration": "AWS_PROXY"
             }
@@ -4569,7 +4660,7 @@
     "artifact": "/Users/mbp/Documents/Code/realworld/node-mongodb-serverless-realworld/.serverless/real-world-backend.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/real-world-backend/dev/1572612340215-2019-11-01T12:45:40.215Z",
+    "artifactDirectoryName": "serverless/real-world-backend/dev/1574930902252-2019-11-28T08:48:22.252Z",
     "artifact": "real-world-backend.zip"
   }
 }

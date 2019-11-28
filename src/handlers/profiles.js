@@ -7,7 +7,7 @@ let dbConnection = null
 
 const getProfileByUsername = async (username) => {
   dbConnection = await db.connect(dbConnection)
-  return await dbConnection.model('User').findOne({ username })
+  return dbConnection.model('User').findOne({ username })
 }
 
 module.exports.get = async (event, context) => {
