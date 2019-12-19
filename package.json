@@ -7,7 +7,8 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "e2e": "newman run ./tests/Conduit.postman_collection.json -e ./tests/Conduit.localhost.postman_environment.json"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,8 @@
     "slug": "1.1.0"
   },
   "devDependencies": {
+    "axios": "0.19.0",
+    "jest": "24.9.0",
     "newman": "4.5.5",
     "serverless-domain-manager": "3.3.0",
     "serverless-dotenv-plugin": "2.1.1",

@@ -2,6 +2,7 @@ service: real-world-backend
 
 # serverless logs -f tags , show the mongo econn refused networkerror
 # show not having configured secret?
+# https://serverless.com/framework/docs/providers/aws/guide/functions#configuration
 provider:
   name: aws
   endpointType: REGIONAL
@@ -9,6 +10,14 @@ provider:
   stage: dev # explain stage... figure out stage?
   region: us-east-1
   timeout: 30
+  usagePlan:
+    throttle:
+      burstLimit: 200
+      rateLimit: 100
+  events:
+    - http:
+      integration: lambda
+
 
 plugins:
   - serverless-offline
@@ -26,31 +35,33 @@ plugins:
 #    endpointType: 'regional'
 #    securityPolicy: tls_1_2
 
+
+# https://itnext.io/how-to-validate-http-requests-before-they-reach-lambda-2fff68bfe93b
+
+# https://www.npmjs.com/package/serverless-aws-documentation
+
 #  serverless-offline: # https://www.npmjs.com/package/serverless-offline
 #    port: 4000
 
 functions:
-
   # Authorization
   # Great articles:
   # https://yos.io/2017/09/03/serverless-authentication-with-jwt/
   # https://www.alexdebrie.com/posts/lambda-custom-authorizers/
   authorize:
     handler: src/handlers/authorize.handler
-    cors: true
     type: request
+    integration: lambda
 
-# Tags
+  # Tags
   tags:
     handler: src/handlers/tags.get
     events:
       - http:
           path: /tags
           method: get
-          integration: lambda
-          cors: true
 
-# Users
+  # Users
   postUser:
     handler: src/handlers/users.postUser
     events:
@@ -58,7 +69,6 @@ functions:
           path: /users
           method: post
           integration: lambda # show what running without this looks like and how the payload becomes a string
-          cors: true
 
   postLogin:
     handler: src/handlers/users.postLogin
@@ -66,8 +76,9 @@ functions:
       - http:
           path: /users/login
           method: post
-          integration: lambda
-          cors: true
+          request:
+            schema:
+              application/json: ${file(src/schemas/postLogin.json)}
 
   putUser:
     handler: src/handlers/users.put
@@ -75,9 +86,7 @@ functions:
       - http:
           path: /user
           method: put
-          integration: lambda
           authorizer: authorize
-          cors: true
 
   getUser:
     handler: src/handlers/users.get
@@ -85,11 +94,9 @@ functions:
       - http:
           path: /user
           method: get
-          integration: lambda
           authorizer: authorize
-          cors: true
 
-### Articles
+  ### Articles
 
   articleBySlug:
     handler: src/handlers/articles.bySlug
@@ -97,8 +104,6 @@ functions:
       - http:
           path: /articles/{slug}
           method: get
-          integration: lambda
-          cors: true
 
   getArticles:
     handler: src/handlers/articles.get
@@ -106,8 +111,6 @@ functions:
       - http:
           path: /articles
           method: get
-          integration: lambda
-          cors: true
 
   postArticle:
     handler: src/handlers/articles.post
@@ -115,9 +118,7 @@ functions:
       - http:
           path: /articles
           method: post
-          integration: lambda
           authorizer: authorize
-          cors: true
 
   favoriteArticle:
     handler: src/handlers/articles.favorite
@@ -125,9 +126,7 @@ functions:
       - http:
           path: /articles/{slug}/favorite
           method: post
-          integration: lambda
           authorizer: authorize
-          cors: true
 
   unfavoriteArticle:
     handler: src/handlers/articles.unFavorite
@@ -135,9 +134,7 @@ functions:
       - http:
           path: /articles/{slug}/favorite
           method: delete
-          integration: lambda
           authorizer: authorize
-          cors: true
 
   deleteArticle:
     handler: src/handlers/articles.delete
@@ -145,9 +142,7 @@ functions:
       - http:
           path: /articles/{slug}
           method: delete
-          integration: lambda
           authorizer: authorize
-          cors: true
 
   feed:
     handler: src/handlers/articles.feed
@@ -155,9 +150,7 @@ functions:
       - http:
           path: /articles/feed
           method: get
-          integration: lambda
           authorizer: authorize
-          cors: true
 
   putArticle:
     handler: src/handlers/articles.put
@@ -165,19 +158,15 @@ functions:
       - http:
           path: /articles/{slug}
           method: put
-          integration: lambda
           authorizer: authorize
-          cors: true
 
-# Articles (comments)
+  # Articles (comments)
   getComments:
     handler: src/handlers/articles.getComments
     events:
       - http:
           path: /articles/{slug}/comments
           method: get
-          integration: lambda
-          cors: true
 
   postComment:
     handler: src/handlers/articles.postComment
@@ -185,9 +174,10 @@ functions:
       - http:
           path: /articles/{slug}/comments
           method: post
-          integration: lambda
           authorizer: authorize
-          cors: true
+          parameters:
+            paths:
+              slug: true
 
   deleteComment:
     handler: src/handlers/articles.deleteComment
@@ -195,20 +185,24 @@ functions:
       - http:
           path: /articles/{slug}/comments/{commentId}
           method: delete
-          integration: lambda
           authorizer: authorize
-          cors: true
+          parameters:
+            paths:
+              slug: true
+              commentId: true
 
-# Profiles
+
+  # Profiles
   getProfile:
     handler: src/handlers/profiles.get
     events:
       - http:
           path: /profiles/{profile}
           method: get
-          integration: lambda
           authorizer: authorize
-          cors: true
+          parameters:
+            paths:
+              profile: true
 
   followProfile:
     handler: src/handlers/profiles.postFollow
@@ -216,9 +210,10 @@ functions:
       - http:
           path: /profiles/{profile}/follow
           method: post
-          integration: lambda
           authorizer: authorize
-          cors: true
+          parameters:
+            paths:
+              profile: true
 
   unfollowProfile:
     handler: src/handlers/profiles.deleteFollow
@@ -226,6 +221,23 @@ functions:
       - http:
           path: /profiles/{profile}/follow
           method: delete
-          integration: lambda
           authorizer: authorize
-          cors: true
+          parameters:
+            paths:
+              profile: true
+
+# https://serverless.com/blog/cors-api-gateway-survival-guide/
+# https://auth0.com/docs/custom-domains/set-up-cloudfront
+# https://medium.com/@davidgurevich_11928/cloudfront-as-a-reverse-proxy-fb6a8dcbed96
+
+#resources:
+#  Resources:
+#    GatewayResponseDefault4XX:
+#      Type: 'AWS::ApiGateway::GatewayResponse'
+#      Properties:
+#        ResponseParameters:
+#          gatewayresponse.header.Access-Control-Allow-Origin: "'*'"
+#          gatewayresponse.header.Access-Control-Allow-Headers: "'*'"
+#        ResponseType: DEFAULT_4XX
+#        RestApiId:
+#          Ref: 'ApiGatewayRestApi'
